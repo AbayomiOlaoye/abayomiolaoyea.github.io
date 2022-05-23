@@ -7,6 +7,22 @@ This is the mobile version of my personal portfolio as beginning Software Develo
 - HTML
 - CSS
 
+## Getting Started
+
+To get a local copy for practice or as a template, follow these simple steps.
+
+### Prerequisites
+You need:
+- github account
+- knowledge of basic git commands
+- slight proficiency with the Command Line Interface
+- code editor
+
+### Setup
+Clone the repository using the **https** or **SSH** address to have a copy on your local machine.
+
+### Usage
+Open your code editor, open the folder (cloned repo) and paly around with the contents by making custom changes to suit your use.
 
 ## Author
 
