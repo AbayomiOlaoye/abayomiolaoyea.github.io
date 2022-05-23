@@ -67,14 +67,9 @@ ul {
 .top-link {
   display: flex;
   justify-content: baseline;
-  gap: 1rem;
-  padding-top: 1rem;
+  gap: 1.3rem;
+  padding-top: 1.4rem;
   padding-left: 0.5rem;
-}
-
-.top-link li img {
-  width: 1.15rem;
-  height: 1rem;
 }
 
 section {

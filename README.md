@@ -22,7 +22,7 @@ You need:
 Clone the repository using the **https** or **SSH** address to have a copy on your local machine.
 
 ### Usage
-Open your code editor, open the folder (cloned repo) and paly around with the contents by making custom changes to suit your use.
+Open your code editor, open the folder (cloned repo) and play around with the contents by making custom changes to suit your use.
 
 ## Author
 
