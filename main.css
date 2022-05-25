@@ -27,7 +27,7 @@ header,
   background-color: #3e3c3c;
   height: 4.5rem;
   padding: 0.75rem 1.5rem;
-  max-width: 375px;
+  min-width: 375px;
   width: 100%;
 }
 
@@ -81,8 +81,6 @@ menu {
 
 section {
   padding: 7.5rem 1.5rem 8.125rem 1.5rem;
-  max-width: 375px;
-  width: 100%;
 }
 
 #landing-page {
@@ -98,12 +96,15 @@ ul.tech.desk-only {
 }
 
 .container {
-  margin:0 auto;
+  min-width: 375px;
+  width: 100%;
 }
 
 #works-section {
   display: grid;
   background: #e5e5e5;
+  min-width: 375px;
+  width: 100%;
 }
 
 .recent-works {
@@ -212,6 +213,7 @@ input[type=button]:active {
   background-image: url("images/Frame.png");
   background-repeat: no-repeat;
   background-position: 100% 395px;
+  min-width: 375px;
 }
 
 .abt-txt {
@@ -229,11 +231,13 @@ input[type=button]:active {
 }
 
 .abt-line {
+  max-width: 327px;
   margin: 209px 0 130px 0;
 }
 
 .major-skills {
   text-align: center;
+  max-width: 375px;
 }
 
 .core-skills {
@@ -247,22 +251,22 @@ input[type=button]:active {
   line-height: 5.5rem;
 }
 
-menu > li.lg-skill::before {
+div > .lg-skill::before {
   content: url("images/cube.png");
   position: absolute;
-  left: 3rem;
+  left: 4rem;
 }
 
-menu > li.libraries::before {
+div > .libraries::before {
   content: url("images/Rectangle.png");
   position: absolute;
-  left: 2.25rem;
+  left: 3.25rem;
 }
 
-menu > li.tools::before {
+div > .tools::before {
   content: url("images/circle.png");
   position: absolute;
-  left: 5.5rem;
+  left: 6.5rem;
 }
 
 .skillset li {
