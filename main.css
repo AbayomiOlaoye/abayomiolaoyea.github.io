@@ -141,6 +141,22 @@ ul.tech.desk-only {
   height: auto;
 }
 
+.tech li {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.94rem;
+}
+
+.skillset li {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.67rem;
+}
+
 .tech.custom-tech li {
   background: #fff;
   border: 1px solid #8993a4;
@@ -151,15 +167,6 @@ ul.tech.desk-only {
   display: flex;
   margin: 12px 0;
   gap: 12px;
-}
-
-.tech li {
-  border: none;
-  background: rgba(255, 255, 255, 0.24);
-  padding: 10px 12px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 0.94rem;
 }
 
 input[type=button] {
@@ -267,11 +274,4 @@ div > .tools::before {
   content: url("images/circle.png");
   position: absolute;
   left: 6.5rem;
-}
-
-.skillset li {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 1.375rem;
-  line-height: 2.67rem;
 }
