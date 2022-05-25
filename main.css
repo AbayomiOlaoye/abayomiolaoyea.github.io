@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&&family=Inter:wght@400;500;700&family=Roboto:wght@700&display=swap');
 
 * {
   padding: 0;
@@ -10,6 +10,7 @@ body {
   background: #1c1a19;
   font-family: 'Inter', sans-serif;
   color: #fff;
+  line-height: 1.5rem;
 }
 
 .nav-container {
@@ -60,7 +61,8 @@ a {
   color: #fff;
 }
 
-ul {
+ul,
+menu {
   list-style-type: none;
 }
 
@@ -74,11 +76,99 @@ ul {
 
 section {
   padding: 7.5rem 1.5rem 8.125rem 1.5rem;
+  width: 100%;
 }
 
-.landing-page {
+#landing-page {
   min-width: 375px;
   background-image: url("images/Illustration-mobile.png");
   background-repeat: no-repeat;
   background-position: 100% 215px;
+}
+
+.desk-only,
+ul.tech.desk-only {
+  display: none;
+}
+
+.container {
+  margin:0 auto;
+}
+
+#works-section {
+  display: grid;
+  background: #e5e5e5;
+  /* max-width: 375px;
+  width: 100%; */
+}
+
+.recent-works {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1c1a19;
+  line-height: 3.25rem;
+  text-align: center;
+}
+
+.inline-hr {
+  margin: 24px 0 80px 0;
+  color: #212121;
+}
+
+.hype-img {
+  margin: 24px 0 12px 0;
+}
+
+.hype-pro {
+  color: #091e42;
+}
+
+.sub-pro {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.75rem;
+}
+
+.normal {
+  max-width: 327px;
+  height: auto;
+}
+
+.tech.custom-tech li {
+  background: #fff;
+  border: 1px solid #8993a4;
+  color: #091e42;
+}
+
+.tech {
+  display: flex;
+  margin: 12px 0;
+  gap: 12px;
+}
+
+.tech li {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.94rem;
+}
+
+input[type=button] {
+  background-color: #ff6b00;
+  border: none;
+  padding: 12px 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.06rem;
+  height: 48px;
+  width: 124px;
+  color: #fff;
+}
+
+.project {
+  margin: 24px 0 24px 0;
 }
