@@ -11,8 +11,11 @@ body {
   font-family: 'Inter', sans-serif;
   color: #fff;
   line-height: 1.5rem;
+  max-height: 100vh;
+  width: 100%;
 }
 
+header,
 .nav-container {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -24,6 +27,8 @@ body {
   background-color: #3e3c3c;
   height: 4.5rem;
   padding: 0.75rem 1.5rem;
+  max-width: 375px;
+  width: 100%;
 }
 
 .main-title {
@@ -76,6 +81,7 @@ menu {
 
 section {
   padding: 7.5rem 1.5rem 8.125rem 1.5rem;
+  max-width: 375px;
   width: 100%;
 }
 
@@ -98,8 +104,6 @@ ul.tech.desk-only {
 #works-section {
   display: grid;
   background: #e5e5e5;
-  /* max-width: 375px;
-  width: 100%; */
 }
 
 .recent-works {
@@ -161,12 +165,26 @@ input[type=button] {
   background-color: #ff6b00;
   border: none;
   padding: 12px 10px;
+  height: 49px;
+  width: auto;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.06rem;
-  height: 48px;
-  width: 124px;
   color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+input[type=button]:hover {
+  border: 1px solid #f55800;
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+input[type=button]:active {
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .project {
@@ -176,4 +194,80 @@ input[type=button] {
   background-size: contain;
   width: 327px;
   height: 385px;
+}
+
+.pro-layer {
+  padding: 84px 16px 0 16px;
+}
+
+.btn-bg {
+  text-align: center;
+  background-color: #ff6b00;
+  border: none;
+  width: 327px;
+  height: 49px;
+}
+
+#about-section {
+  background-image: url("images/Frame.png");
+  background-repeat: no-repeat;
+  background-position: 100% 395px;
+}
+
+.abt-txt {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  letter-spacing: 0.023rem;
+  color: #ff6b00;
+  margin-bottom: 24px;
+}
+
+#about-section .normal {
+  margin-bottom: 24px;
+}
+
+.abt-line {
+  margin: 209px 0 130px 0;
+}
+
+.major-skills {
+  text-align: center;
+}
+
+.core-skills {
+  position: relative;
+}
+
+.menu {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 5.5rem;
+}
+
+menu > li.lg-skill::before {
+  content: url("images/cube.png");
+  position: absolute;
+  left: 3rem;
+}
+
+menu > li.libraries::before {
+  content: url("images/Rectangle.png");
+  position: absolute;
+  left: 2.25rem;
+}
+
+menu > li.tools::before {
+  content: url("images/circle.png");
+  position: absolute;
+  left: 5.5rem;
+}
+
+.skillset li {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.67rem;
 }
