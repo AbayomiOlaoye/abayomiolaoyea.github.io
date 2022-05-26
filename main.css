@@ -288,6 +288,7 @@ div > .tools::before {
 
 #contact-section {
   background-color: #fff;
+  padding-bottom: 8px;
 }
 
 .contact-form {
@@ -349,4 +350,20 @@ textarea#textarea-mobile {
 
 hr.form-line {
   color: #dbd8d7;
+}
+
+.btm-border {
+  border-bottom: 5px solid #0d151e;
+  border-radius: 10px;
+  width: 134px;
+  height: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-link-lp.footerlink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
