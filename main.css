@@ -285,3 +285,68 @@ div > .tools::before {
   position: absolute;
   left: 6.5rem;
 }
+
+#contact-section {
+  background-color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 327px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.normal.form-para {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  color: #172b4d;
+  text-align: center;
+}
+
+.mob-form {
+  margin-top: 73px;
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 124px;
+}
+
+textarea[placeholder] {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+input,
+textarea {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  width: 100%;
+  margin: 14px 16px;
+  border: none;
+}
+
+input {
+  color: #979493;
+  max-width: 295px;
+}
+
+textarea#textarea-mobile {
+  margin: 14px 0;
+  height: 114px;
+  padding: 12px;
+  color: #3c3a39;
+  background-color: #fbf8f7;
+}
+
+.contact-btn {
+  width: 131px;
+  height: 48px;
+}
+
+hr.form-line {
+  color: #dbd8d7;
+}
