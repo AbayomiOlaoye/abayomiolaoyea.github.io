@@ -102,7 +102,7 @@ ul.tech.desk-only {
 
 #works-section {
   display: grid;
-  background: #e5e5e5;
+  background: #fff;
   min-width: 375px;
   width: 100%;
 }
@@ -169,7 +169,7 @@ ul.tech.desk-only {
   gap: 12px;
 }
 
-input[type=button] {
+button {
   background-color: #ff6b00;
   border: none;
   padding: 12px 10px;
@@ -184,13 +184,13 @@ input[type=button] {
   transition-duration: 0.4s;
 }
 
-input[type=button]:hover {
+button:hover {
   border: 1px solid #f55800;
   background-color: #fff5e1;
   color: #f55800;
 }
 
-input[type=button]:active {
+button:active {
   background-color: #e05304;
   color: #f4f1f0;
 }
@@ -243,6 +243,8 @@ input[type=button]:active {
 }
 
 .major-skills {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   max-width: 375px;
 }
