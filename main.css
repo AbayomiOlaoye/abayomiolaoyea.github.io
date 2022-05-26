@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&&family=Inter:wght@400;500;700&family=Roboto:wght@700&display=swap');
 
 * {
   padding: 0;
@@ -10,8 +10,12 @@ body {
   background: #1c1a19;
   font-family: 'Inter', sans-serif;
   color: #fff;
+  line-height: 1.5rem;
+  max-height: 100vh;
+  width: 100%;
 }
 
+header,
 .nav-container {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -23,6 +27,8 @@ body {
   background-color: #3e3c3c;
   height: 4.5rem;
   padding: 0.75rem 1.5rem;
+  min-width: 375px;
+  width: 100%;
 }
 
 .main-title {
@@ -60,7 +66,8 @@ a {
   color: #fff;
 }
 
-ul {
+ul,
+menu {
   list-style-type: none;
 }
 
@@ -76,9 +83,197 @@ section {
   padding: 7.5rem 1.5rem 8.125rem 1.5rem;
 }
 
-.landing-page {
+#landing-page {
   min-width: 375px;
   background-image: url("images/Illustration-mobile.png");
   background-repeat: no-repeat;
   background-position: 100% 215px;
+}
+
+.desk-only,
+ul.tech.desk-only {
+  display: none;
+}
+
+.container {
+  min-width: 375px;
+  width: 100%;
+}
+
+#works-section {
+  display: grid;
+  background: #fff;
+  min-width: 375px;
+  width: 100%;
+}
+
+.recent-works {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1c1a19;
+  line-height: 3.25rem;
+  text-align: center;
+}
+
+.inline-hr {
+  margin: 24px 0 80px 0;
+  color: #212121;
+}
+
+.hype-img {
+  margin: 24px 0 12px 0;
+}
+
+.hype-pro {
+  color: #091e42;
+}
+
+.sub-pro {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.75rem;
+}
+
+.normal {
+  max-width: 327px;
+  height: auto;
+}
+
+.tech li {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.94rem;
+}
+
+.skillset li {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.67rem;
+}
+
+.tech.custom-tech li {
+  background: #fff;
+  border: 1px solid #8993a4;
+  color: #091e42;
+}
+
+.tech {
+  display: flex;
+  margin: 12px 0;
+  gap: 12px;
+}
+
+button {
+  background-color: #ff6b00;
+  border: none;
+  padding: 12px 10px;
+  height: 49px;
+  width: auto;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.06rem;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  border: 1px solid #f55800;
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.project {
+  margin: 24px 0 24px 0;
+  background-image: url('images/mask-group.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 327px;
+  height: 385px;
+}
+
+.pro-layer {
+  padding: 84px 16px 0 16px;
+}
+
+.btn-bg {
+  text-align: center;
+  background-color: #ff6b00;
+  border: none;
+  width: 327px;
+  height: 49px;
+}
+
+#about-section {
+  background-image: url("images/Frame.png");
+  background-repeat: no-repeat;
+  background-position: 100% 395px;
+  min-width: 375px;
+}
+
+.abt-txt {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  letter-spacing: 0.023rem;
+  color: #ff6b00;
+  margin-bottom: 24px;
+}
+
+#about-section .normal {
+  margin-bottom: 24px;
+}
+
+.abt-line {
+  max-width: 327px;
+  margin: 209px 0 130px 0;
+}
+
+.major-skills {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 375px;
+}
+
+.core-skills {
+  position: relative;
+}
+
+.menu {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 5.5rem;
+}
+
+div > .lg-skill::before {
+  content: url("images/cube.png");
+  position: absolute;
+  left: 4rem;
+}
+
+div > .libraries::before {
+  content: url("images/Rectangle.png");
+  position: absolute;
+  left: 3.25rem;
+}
+
+div > .tools::before {
+  content: url("images/circle.png");
+  position: absolute;
+  left: 6.5rem;
 }
