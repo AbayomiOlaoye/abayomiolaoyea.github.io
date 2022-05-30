@@ -10,9 +10,12 @@
 <body>
 
   <header>
-    <div class="container nav-container">
-      <a href="index.html">Oluwatoyin Olaoye</a>
-      <img src="images/menu.svg" alt="open navigation">
+    <div class="nav-container">
+      <div class="mob-nav">
+        <a href="index.html">Oluwatoyin Olaoye</a>
+        <img src="images/menu.svg" alt="open navigation">
+      </div>
+      
       <nav class="desktop-nav">
         <ul class="nav-link">
           <li><a href="#works-section">Portfolio</a></li>
@@ -243,6 +246,40 @@
             </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <div class="contact-form">
+      <p class="normal form-para">I'm always interested in hearing about new projects, so if you'd like to chat please do get in touch.</p>
+      <form class="mob-form" action="https://formspree.io/f/mrgjojra" method="post">
+        <input type="text" class="font-style" name="fullname" id="fullname" placeholder="Full name" maxlength="30" required>
+        <hr class="form-line">
+        <input type="email" class="font-style" name="email" id="email-mobile" placeholder="Email address" required>
+        <hr class="form-line">
+        <textarea id="textarea-mobile" class="font-style" name="message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
+        <button>Get in touch</button>
+      </form>
+
+      <form class="desk-only" id="lg-screen" action="https://formspree.io/f/mrgjojra" method="post">
+        <input type="text" class="font-style" name="firstname" id="firstname" placeholder="First Name" maxlength="30" required>
+        <input type="text" class="font-style" name="lastname" id="lastname" placeholder="Last Name" maxlength="30" required><br>
+        <input type="email" class="font-style" name="email" id="email" placeholder="Email address" required>
+        <textarea id="textarea" class="font-style" name="message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
+        <br>
+        <button class="contact-btn">Get in touch</button>
+      </form>
+    </div>
+    <hr id="br">
+    <div class="social-link-lp footerlink">
+      <ul class="top-link contact-links">
+        <li><a href="https://www.github.com/MindPrepDev"><img src="images/footer-git.svg" alt="my github profile"></a></li>
+        <li><a href="https://www.linkedin.com/in/oluwatoyin-olaoye-82880363/"><img src="images/foot-linked.svg" alt="my linkedin profile"></a></li>
+        <li><a href="#"><img src="images/footer-ang.svg" alt="connect to angel list"></a></li>
+        <li><a href="https://www.twitter.com/olaoyeelijah"><img src="images/footer-twt.svg" alt=""></a></li>
+        <li><a href="https://medium.com/@mindprepopps"><img src="images/footer-medium.svg" alt=""></a></li>
+      </ul>
+      <div class="btm-border"></div>
     </div>
   </section>
 </body>
