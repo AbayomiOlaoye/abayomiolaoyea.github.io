@@ -13,6 +13,7 @@ body {
   line-height: 1.5rem;
   max-height: 100vh;
   width: 100%;
+  margin: 0 auto;
 }
 
 header {
@@ -93,9 +94,10 @@ menu {
 
 #landing-page {
   width: 100%;
-  background-image: url("images/Illustration-mobile.png");
+  background-image: url("/images/Illustration-mobile.png");
   background-repeat: no-repeat;
   background-position: 100% 215px;
+  padding: 7.5rem 1.5rem 8.125rem 1.5rem;
 }
 
 .desk-only,
@@ -106,7 +108,6 @@ ul.tech.desk-only {
 .container {
   margin: 0 auto;
   width: 100%;
-  padding: 7.5rem 1.5rem 8.125rem 1.5rem;
 }
 
 #works-section {
@@ -123,6 +124,10 @@ ul.tech.desk-only {
   line-height: 3.25rem;
   text-align: center;
   width: 100%;
+}
+
+section.sect-container {
+  padding: 7.5rem 1.5rem 8.125rem 1.5rem;
 }
 
 .inline-hr {
@@ -218,7 +223,7 @@ button:active {
 
 .project {
   margin: 24px auto;
-  background-image: url('images/mask-group.png');
+  background-image: url('/images/mask-group.png');
   background-repeat: no-repeat;
   background-size: contain;
   max-width: 327px;
@@ -243,7 +248,7 @@ button:active {
 }
 
 #about-section {
-  background-image: url("images/Frame.png");
+  background-image: url("/images/Frame.png");
   background-repeat: no-repeat;
   background-position: 100% 395px;
   width: 100%;
@@ -289,19 +294,19 @@ button:active {
 }
 
 div > .lg-skill::before {
-  content: url("images/cube.png");
+  content: url("/images/cube.png");
   position: absolute;
   left: 3.2rem;
 }
 
 div > .libraries::before {
-  content: url("images/Rectangle.png");
+  content: url("/images/Rectangle.png");
   position: absolute;
   left: 2.5rem;
 }
 
 div > .tools::before {
-  content: url("images/circle.png");
+  content: url("/images/circle.png");
   position: absolute;
   left: 5.5rem;
 }
@@ -395,10 +400,8 @@ hr.form-line {
   align-items: center;
 }
 
-#br {
+hr#br {
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-width: 375px;
   color: #dfe1e6;
 }

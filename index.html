@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OAT - Portfolio</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/queries.css">
 </head>
 <body>
 
@@ -13,7 +14,7 @@
     <div class="nav-container">
       <div class="mob-nav">
         <a href="index.html">Oluwatoyin Olaoye</a>
-        <img src="images/menu.svg" alt="open navigation">
+        <img class="mob-only" src="images/menu.svg" alt="open navigation">
       </div>
       
       <nav class="desktop-nav">
@@ -28,7 +29,7 @@
   </header>
 
   <section id="landing-page">
-    <div class="container">
+     <div class="container">
       <h1 class="main-title">Hey There, <br> I am Toyin.</h1>
       <h3 class="intro">I'm a Software Developer</h3>
       <p class="text">I can help you build a product, feature or website. Look through some of my 
@@ -46,10 +47,13 @@
     </div>
   </section>
 
-  <section id="works-section">
+  <section class="sect-container" id="works-section">
     <div class="container">
-      <h2 class="recent-works">My Recent Works</h2>
-      <hr class="inline-hr">
+      <div class="works-top">
+        <h2 class="recent-works">My Recent Works</h2>
+        <hr class="inline-hr">
+      </div>
+      
       <div class="multi-post">
         <img class="hype-img" src="images/hype-project.png" alt="project sample">
         <div class="hype-container">  
@@ -64,8 +68,8 @@
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
+          <button id="hype-btn" type="submit">See Project</button>
         </div>
-        <button type="submit">See Project</button>
       </div>
 
       <div class="project one">
@@ -74,7 +78,7 @@
           <p class="normal">A daily selection of privately personalized reads; no accounts or sign-ups 
             required has been the industry's standard.
           </p>
-          <ul class="tech">
+          <ul class="tech mob-only">
             <li>css</li>
             <li>html</li>
             <li>bootstrap</li>
@@ -92,12 +96,12 @@
 
       <div class="project two">
         <div class="pro-layer">  
-          <h3 class="sub-pro">Professional Art Printing Data</h3>
+          <h3 class="sub-pro mob-only">Professional Art Printing Data</h3>
           <h3 class="sub-pro desk-only">Data Dashboard Healthcare</h3>
           <p class="normal">A daily selection of privately personalized reads; no accounts or sign-ups 
             required has been the industry's standard.
           </p>
-          <ul class="tech">
+          <ul class="tech mob-only">
             <li>css</li>
             <li>html</li>
             <li>bootstrap</li>
@@ -115,12 +119,12 @@
 
       <div class="project three">
         <div class="pro-layer">  
-          <h3 class="sub-pro">Professional Art Printing Data</h3>
+          <h3 class="sub-pro mob-only">Professional Art Printing Data</h3>
           <h3 class="sub-pro desk-only">Website Portfolio</h3>
           <p class="normal">A daily selection of privately personalized reads; no accounts or sign-ups 
             required has been the industry's standard.
           </p>
-          <ul class="tech">
+          <ul class="tech mob-only">
             <li>css</li>
             <li>html</li>
             <li>bootstrap</li>
@@ -142,7 +146,7 @@
           <p class="normal">A daily selection of privately personalized reads; no accounts or sign-ups 
             required has been the industry's standard.
           </p>
-          <ul class="tech">
+          <ul class="tech mob-only">
             <li>css</li>
             <li>html</li>
             <li>bootstrap</li>
@@ -160,12 +164,12 @@
 
       <div class="project five">
         <div class="pro-layer">  
-          <h3 class="sub-pro">Professional Art Printing Data</h3>
+          <h3 class="sub-pro mob-only">Professional Art Printing Data</h3>
           <h3 class="sub-pro desk-only">Data Dashboard Healthcare</h3>
           <p class="normal">A daily selection of privately personalized reads; no accounts or sign-ups 
             required has been the industry's standard.
           </p>
-          <ul class="tech">
+          <ul class="tech mob-only">
             <li>css</li>
             <li>html</li>
             <li>bootstrap</li>
@@ -183,12 +187,12 @@
 
       <div class="project six">
         <div class="pro-layer">  
-          <h3 class="sub-pro">Professional Art Printing Data</h3>
+          <h3 class="sub-pro mob-only">Professional Art Printing Data</h3>
           <h3 class="sub-pro desk-only">Website Portfolio</h3>
           <p class="normal">A daily selection of privately personalized reads; no accounts or sign-ups 
             required has been the industry's standard.
           </p>
-          <ul class="tech">
+          <ul class="tech mob-only">
             <li>css</li>
             <li>html</li>
             <li>bootstrap</li>
@@ -206,7 +210,7 @@
     </div>
   </section>
 
-  <section id="about-section">
+  <section class="sect-container" id="about-section">
     <div class="container">
       <h2 class="abt-txt">About me</h2>
       <p class="normal">Hello, I'm a software developer! I can help you build a product , feature or 
@@ -249,7 +253,7 @@
     </div>
   </section>
 
-  <section id="contact-section">
+  <section class="sect-container" id="contact-section">
     <div class="contact-form">
       <p class="normal form-para">I'm always interested in hearing about new projects, so if you'd like to chat please do get in touch.</p>
       <form class="mob-form" action="https://formspree.io/f/mrgjojra" method="post">
