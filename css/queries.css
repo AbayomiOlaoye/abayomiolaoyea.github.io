@@ -19,6 +19,7 @@
     line-height: 5.125rem;
     min-width: 566px;
     color: #f55800;
+    padding-top: 70px;
   }
   
   .intro {
@@ -51,6 +52,7 @@
   }
   
   #landing-page {
+    position: relative;
     width: 100%;
     background-image: url("/images/Illustration-header.png");
     background-position: top right -35%;
@@ -76,42 +78,47 @@
               "three four"
               "five six";
     background: #fff;
+    gap: 24px;
   }
 
   div.container .works-top {
     display: flex;
     grid-area: top;
+    justify-content: space-between;
     text-align: left;
+    gap: 24px;
     width: 100%;
-    margin-top: 40px;
   }
   
   .recent-works {
     color: #091e42;
     line-height: 3.25rem;
     text-align: left;
-    width: 415px;
-    margin-right: 24px;
+    width: 315px;
+    height: 52px;
   }
   
   .inline-hr {
-    min-width: 217px;
+    align-self: flex-end;
+    max-width: 100%;
+    width: 70%;
     height: 0;
+    margin-bottom: 40px;
   }
 
   div.multi-post {
     width: 100%;
-    min-width: 768px;
+    min-width: 327px;
     max-height: 400px;
     display: flex;
     gap: 24px;
     grid-area: hype;
-    margin-top: 140px;
+    margin-top: 74px;
   }
   
   img.hype-img {
     margin: 0 0;
-    width: 358px;
+    width: 50%;
     max-height: 350px;
   }
   
@@ -174,7 +181,6 @@
 
   .project:hover .pro-layer {
     display: none;
-    opacity: 1;
   }
 
   .btn-bg {
@@ -228,20 +234,15 @@
   }
 
   div > .lg-skill::before {
-    content: url("/images/cube.png");
-    position: absolute;
     left: -0.25rem;
   }
   
   div > .libraries::before {
-    content: url("/images/Rectangle.png");
     position: relative;
     left: -1rem;
   }
   
   div > .tools::before {
-    content: url("/images/circle.png");
-    position: absolute;
     left: -.15rem;
   }
   
@@ -252,17 +253,9 @@
   }
   
   .contact-form {
-    display: flex;
     flex-direction: row;
-  }
-  
-  .normal.form-para {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.75rem;
-    color: #172b4d;
-    text-align: center;
+    width: 90%;
+    margin:  0 auto;
   }
 
   input[type=text],
@@ -272,18 +265,13 @@
   
   input,
   textarea {
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    width: 100%;
     max-width: 298px;
     margin: 14px 72px;
-    border: none;
   }
   
   form#lg-screen {
     display: inline;
-    margin-top: 0;
-    
+    margin-top: 0; 
   }
   
   .desk-only textarea {
@@ -291,34 +279,12 @@
   }
   
   .contact-btn {
-    width: 131px;
-    height: 48px;
+    width: auto;
+    height: 58px;
   }
   
   hr.form-line {
     color: #dbd8d7;
-  }
-  
-  .btm-border {
-    border-bottom: 5px solid #0d151e;
-    border-radius: 10px;
-    width: 134px;
-    height: 5px;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .social-link-lp.footerlink {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .social-link-lp.footerlink ul {
-    justify-content: center;
-    align-items: center;
   }
   
   .project.one {
@@ -343,5 +309,115 @@
 
   .project.six {
     grid-area: six;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-container {
+    width: 85%;
+  }
+
+  .nav-link {
+    gap: 2.5rem;
+  }
+
+  .container {
+    width: 85%;
+    height: auto;
+  }
+
+  .top-link.top {
+    flex-direction: column;
+    position: absolute;
+    bottom: 340px;
+    left: 36px;
+    padding: 0;
+    width: auto;
+    gap: 20px;
+  }
+
+  .main-title {
+    font-size: 5.5rem;
+    line-height: 6rem;
+    padding-bottom: 24px;
+  }
+
+  .text {
+    padding: 24px 0 121px 0;
+  }
+
+  #landing-page {
+    background-position: top right;
+  }
+
+  #works-section > div.container {
+    grid-template-areas: 
+              "top top top"
+              "hype hype hype"
+              "one two three"
+              "four five six";
+  }
+
+  div.multi-post .hype-container {
+    max-width: 1156px;
+    height: 448px;
+  }
+
+  img.hype-img {
+    max-width: 684px;
+    max-height: 448px;
+  }
+
+  div.multi-post > div > p {
+    min-width: 448px;
+    height: 140px;
+  }
+
+  #about-section {
+    background-position: top 10% right;
+  }
+
+  .major-skills {
+    gap: 20%;
+  }
+
+  .normal.form-para {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    color: #262626;
+    text-align: left;
+    width: 455px;
+    max-height: 256px;
+  }
+
+  .contact-form {
+    width: 90%;
+    gap: 96px;
+    text-align: left;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  form#lg-screen input {
+    margin: 1rem;
+    max-width: 325px;
+  }
+
+  form#lg-screen input[type=email] {
+    max-width: 684px;
+  }
+
+  form#lg-screen {
+    padding: 0 0 124px 0;
+    width: 70%;
+  }
+
+  form.desk-only textarea {
+    min-width: 684px;
+    margin: 0 16px 8px 16px;
+  }
+  
+  .contact-btn {
+    margin-left: 16px;
   }
 }
