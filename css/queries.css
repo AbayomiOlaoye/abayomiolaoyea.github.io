@@ -8,12 +8,12 @@
     width: 90%;
     font-size: 1.25rem;
   }
-  
+
   .mob-only,
   .tech.mob-only {
     display: none;
   }
-  
+
   .main-title {
     font-size: 4.5rem;
     line-height: 5.125rem;
@@ -21,7 +21,7 @@
     color: #f55800;
     padding-top: 70px;
   }
-  
+
   .intro {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -29,7 +29,7 @@
     line-height: 2.75rem;
     color: #fff;
   }
-  
+
   .text {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -37,7 +37,7 @@
     line-height: 2rem;
     font-size: 1.25rem;
   }
-  
+
   .desktop-nav {
     display: block;
   }
@@ -46,11 +46,11 @@
     display: flex;
     gap: 1.5rem;
   }
-  
+
   .top-link {
     gap: 1.5rem;
   }
-  
+
   #landing-page {
     position: relative;
     width: 100%;
@@ -63,20 +63,20 @@
   ul.tech.desk-only {
     display: flex;
   }
-  
+
   .container {
     margin: 0 auto;
     width: 90%;
   }
-  
+
   #works-section > div.container {
     display: grid;
     grid-template-areas: 
-              "top top"
-              "hype hype"
-              "one two"
-              "three four"
-              "five six";
+          "top top"
+          "hype hype"
+          "one two"
+          "three four"
+          "five six";
     background: #fff;
     gap: 24px;
   }
@@ -89,7 +89,7 @@
     gap: 24px;
     width: 100%;
   }
-  
+
   .recent-works {
     color: #091e42;
     line-height: 3.25rem;
@@ -97,7 +97,7 @@
     width: 315px;
     height: 52px;
   }
-  
+
   .inline-hr {
     align-self: flex-end;
     max-width: 100%;
@@ -115,18 +115,18 @@
     grid-area: hype;
     margin-top: 74px;
   }
-  
+
   img.hype-img {
     margin: 0 0;
     width: 50%;
     max-height: 350px;
   }
-  
+
   .hype-pro {
     color: #091e42;
     width: 100%;
   }
-  
+
   .normal {
     width: 340px;
     font-size: 1.025rem;
@@ -156,8 +156,8 @@
   .project.card-3 {
     background-image: url('/images/project3.png');
   }
-  
-  /*---Manipulate btn-bg when .pro-layer is hovered on*/
+
+  /* Manipulate btn-bg when .pro-layer is hovered on */
   .cursor-hover-bg {
     visibility: hidden;
   }
@@ -174,7 +174,7 @@
     height: auto;
     background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
   }
-  
+
   div.pro-layer.web {
     padding-top: 222px;
   }
@@ -188,35 +188,35 @@
     max-width: 369px;
     height: 58px;
   }
-  
+
   #about-section {
     background-image: url("/images/Frame-desktop.png");
     background-repeat: no-repeat;
     background-position: top 20% right -250px;
     width: 100%;
   }
-  
+
   #about-section .normal {
     font-size: 1.25rem;
     max-width: 566px;
   }
-  
+
   .abt-line {
     width: 100%;
     margin: 209px 0 130px 0;
   }
-  
+
   .major-skills {
     flex-direction: row;
     text-align: left;
     gap: 15%;
     margin: 0;
   }
-  
+
   .core-skills {
     text-align: left;
   }
-  
+
   .menu {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -224,7 +224,7 @@
     line-height: 5.5rem;
     padding-left: 36px;
   }
-  
+
   div.menu.frm {
     padding-left: 16px;
   }
@@ -236,22 +236,22 @@
   div > .lg-skill::before {
     left: -0.25rem;
   }
-  
+
   div > .libraries::before {
     position: relative;
     left: -1rem;
   }
-  
+
   div > .tools::before {
     left: -.15rem;
   }
-  
+
   #contact-section {
     background-color: #fff;
     padding-top: 120px;
     padding-bottom: 8px;
   }
-  
+
   .contact-form {
     flex-direction: row;
     width: 90%;
@@ -262,31 +262,31 @@
   input[type=email] {
    border-bottom: 1px solid #dbd8d7;
   }
-  
+
   input,
   textarea {
     max-width: 298px;
     margin: 14px 72px;
   }
-  
+
   form#lg-screen {
     display: inline;
     margin-top: 0; 
   }
-  
+
   .desk-only textarea {
     min-width: 298px;
   }
-  
+
   .contact-btn {
     width: auto;
     height: 58px;
   }
-  
+
   hr.form-line {
     color: #dbd8d7;
   }
-  
+
   .project.one {
     grid-area: one;
   } 
@@ -352,10 +352,10 @@
 
   #works-section > div.container {
     grid-template-areas: 
-              "top top top"
-              "hype hype hype"
-              "one two three"
-              "four five six";
+          "top top top"
+          "hype hype hype"
+          "one two three"
+          "four five six";
   }
 
   div.multi-post .hype-container {
@@ -416,7 +416,7 @@
     min-width: 684px;
     margin: 0 16px 8px 16px;
   }
-  
+
   .contact-btn {
     margin-left: 16px;
   }
