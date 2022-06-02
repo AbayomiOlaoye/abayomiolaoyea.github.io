@@ -137,12 +137,21 @@
     transition: none;
   }
 
+  button:hover {
+    transform: scale(1.1);
+  }
+
   .project {
     margin: 24px 0;
     max-width: 369px;
     max-height: 435px;
     position: relative;
     cursor: pointer;
+  }
+
+  .project:hover {
+    transform: scale(1.1);
+    transition-duration: 2s;
   }
 
   .project.card-1 {
