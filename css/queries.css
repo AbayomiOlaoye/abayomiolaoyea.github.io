@@ -1,0 +1,423 @@
+@media (min-width: 768px) {
+  body {
+    line-height: 1.75rem;
+  }
+
+  .nav-container {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.25rem;
+  }
+
+  .mob-only,
+  .tech.mob-only {
+    display: none;
+  }
+
+  .main-title {
+    font-size: 4.5rem;
+    line-height: 5.125rem;
+    min-width: 566px;
+    color: #f55800;
+    padding-top: 70px;
+  }
+
+  .intro {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    color: #fff;
+  }
+
+  .text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    min-width: 566px;
+    line-height: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .nav-link {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .top-link {
+    gap: 1.5rem;
+  }
+
+  #landing-page {
+    position: relative;
+    width: 100%;
+    background-image: url("/images/Illustration-header.png");
+    background-position: top right -35%;
+    background-size: contain;
+  }
+
+  .desk-only,
+  ul.tech.desk-only {
+    display: flex;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #works-section > div.container {
+    display: grid;
+    grid-template-areas:
+      "top top"
+      "hype hype"
+      "one two"
+      "three four"
+      "five six";
+    background: #fff;
+    gap: 24px;
+  }
+
+  div.container .works-top {
+    display: flex;
+    grid-area: top;
+    justify-content: space-between;
+    text-align: left;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .recent-works {
+    color: #091e42;
+    line-height: 3.25rem;
+    text-align: left;
+    width: 315px;
+    height: 52px;
+  }
+
+  .inline-hr {
+    align-self: flex-end;
+    max-width: 100%;
+    width: 70%;
+    height: 0;
+    margin-bottom: 40px;
+  }
+
+  div.multi-post {
+    width: 100%;
+    min-width: 327px;
+    max-height: 400px;
+    display: flex;
+    gap: 24px;
+    grid-area: hype;
+    margin-top: 74px;
+  }
+
+  img.hype-img {
+    margin: 0 0;
+    width: 50%;
+    max-height: 350px;
+  }
+
+  .hype-pro {
+    color: #091e42;
+    width: 100%;
+  }
+
+  .normal {
+    width: 340px;
+    font-size: 1.025rem;
+  }
+
+  button {
+    height: 58px;
+    transition: none;
+  }
+
+  .project {
+    margin: 24px 0;
+    max-width: 369px;
+    max-height: 435px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .project.card-1 {
+    background-image: url('/images/project.png');
+  }
+
+  .project.card-2 {
+    background-image: url('/images/project2.png');
+  }
+
+  .project.card-3 {
+    background-image: url('/images/project3.png');
+  }
+
+  /* Manipulate btn-bg when .pro-layer is hovered on */
+  .cursor-hover-bg {
+    visibility: hidden;
+  }
+
+  .project:hover .cursor-hover-bg {
+    visibility: visible;
+    position: relative;
+    top: 87%;
+  }
+
+  .pro-layer {
+    padding: 178px 16px 14px 16px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+  }
+
+  div.pro-layer.web {
+    padding-top: 222px;
+  }
+
+  .project:hover .pro-layer {
+    display: none;
+  }
+
+  .btn-bg {
+    width: 100%;
+    max-width: 369px;
+    height: 58px;
+  }
+
+  #about-section {
+    background-image: url("/images/Frame-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top 20% right -250px;
+    width: 100%;
+  }
+
+  #about-section .normal {
+    font-size: 1.25rem;
+    max-width: 566px;
+  }
+
+  .abt-line {
+    width: 100%;
+    margin: 209px 0 130px 0;
+  }
+
+  .major-skills {
+    flex-direction: row;
+    text-align: left;
+    gap: 15%;
+    margin: 0;
+  }
+
+  .core-skills {
+    text-align: left;
+  }
+
+  .menu {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 5.5rem;
+    padding-left: 36px;
+  }
+
+  div.menu.frm {
+    padding-left: 16px;
+  }
+
+  div.tools.menu {
+    padding-left: 25px;
+  }
+
+  div > .lg-skill::before {
+    left: -0.25rem;
+  }
+
+  div > .libraries::before {
+    position: relative;
+    left: -1rem;
+  }
+
+  div > .tools::before {
+    left: -0.15rem;
+  }
+
+  #contact-section {
+    background-color: #fff;
+    padding-top: 120px;
+    padding-bottom: 8px;
+  }
+
+  .contact-form {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input[type=text],
+  input[type=email] {
+    border-bottom: 1px solid #dbd8d7;
+  }
+
+  input,
+  textarea {
+    max-width: 298px;
+    margin: 14px 72px;
+  }
+
+  form#lg-screen {
+    display: inline;
+    margin-top: 0;
+  }
+
+  .desk-only textarea {
+    min-width: 298px;
+  }
+
+  .contact-btn {
+    width: auto;
+    height: 58px;
+  }
+
+  hr.form-line {
+    color: #dbd8d7;
+  }
+
+  .project.one {
+    grid-area: one;
+  }
+
+  .project.two {
+    grid-area: two;
+  }
+
+  .project.three {
+    grid-area: three;
+  }
+
+  .project.four {
+    grid-area: four;
+  }
+
+  .project.five {
+    grid-area: five;
+  }
+
+  .project.six {
+    grid-area: six;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-container {
+    width: 85%;
+  }
+
+  .nav-link {
+    gap: 2.5rem;
+  }
+
+  .container {
+    width: 85%;
+    height: auto;
+  }
+
+  .top-link.top {
+    flex-direction: column;
+    position: absolute;
+    bottom: 340px;
+    left: 36px;
+    padding: 0;
+    width: auto;
+    gap: 20px;
+  }
+
+  .main-title {
+    font-size: 5.5rem;
+    line-height: 6rem;
+    padding-bottom: 24px;
+  }
+
+  .text {
+    padding: 24px 0 121px 0;
+  }
+
+  #landing-page {
+    background-position: top right;
+  }
+
+  #works-section > div.container {
+    grid-template-areas:
+      "top top top"
+      "hype hype hype"
+      "one two three"
+      "four five six";
+  }
+
+  div.multi-post .hype-container {
+    max-width: 1156px;
+    height: 448px;
+  }
+
+  img.hype-img {
+    max-width: 684px;
+    max-height: 448px;
+  }
+
+  div.multi-post > div > p {
+    min-width: 448px;
+    height: 140px;
+  }
+
+  #about-section {
+    background-position: top 10% right;
+  }
+
+  .major-skills {
+    gap: 20%;
+  }
+
+  .normal.form-para {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    color: #262626;
+    text-align: left;
+    width: 455px;
+    max-height: 256px;
+  }
+
+  .contact-form {
+    width: 90%;
+    gap: 96px;
+    text-align: left;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  form#lg-screen input {
+    margin: 1rem;
+    max-width: 325px;
+  }
+
+  form#lg-screen input[type=email] {
+    max-width: 684px;
+  }
+
+  form#lg-screen {
+    padding: 0 0 124px 0;
+    width: 70%;
+  }
+
+  form.desk-only textarea {
+    min-width: 684px;
+    margin: 0 16px 8px 16px;
+  }
+
+  .contact-btn {
+    margin-left: 16px;
+  }
+}

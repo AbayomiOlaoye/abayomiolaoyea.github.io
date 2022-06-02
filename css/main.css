@@ -13,11 +13,13 @@ body {
   line-height: 1.5rem;
   max-height: 100vh;
   width: 100%;
+  margin: 0 auto;
 }
 
 header {
   width: 100%;
   display: flex;
+  background-color: #3e3c3c;
 }
 
 .mob-nav {
@@ -35,7 +37,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3e3c3c;
   height: 4.5rem;
   padding: 0.75rem 1.5rem;
   width: 100%;
@@ -93,9 +94,10 @@ menu {
 
 #landing-page {
   width: 100%;
-  background-image: url("images/Illustration-mobile.png");
+  background-image: url("/images/Illustration-mobile.png");
   background-repeat: no-repeat;
   background-position: 100% 215px;
+  padding: 7.5rem 1.5rem 8.125rem 1.5rem;
 }
 
 .desk-only,
@@ -106,12 +108,14 @@ ul.tech.desk-only {
 .container {
   margin: 0 auto;
   width: 100%;
-  padding: 7.5rem 1.5rem 8.125rem 1.5rem;
 }
 
 #works-section {
-  display: grid;
   background: #fff;
+  width: 100%;
+}
+
+div.container .works-top {
   width: 100%;
 }
 
@@ -125,6 +129,10 @@ ul.tech.desk-only {
   width: 100%;
 }
 
+section.sect-container {
+  padding: 7.5rem 1.5rem 8.125rem 1.5rem;
+}
+
 .inline-hr {
   margin: 24px 0 80px 0;
   color: #212121;
@@ -133,11 +141,12 @@ ul.tech.desk-only {
 
 .multi-post {
   margin: 0 auto;
-  max-width: 327px;
+  width: 327px;
+  height: auto;
 }
 
 .hype-img {
-  margin: 24px 0 12px 0;
+  margin-bottom: 12px;
   width: 100%;
   height: auto;
 }
@@ -156,9 +165,7 @@ ul.tech.desk-only {
 }
 
 .normal {
-  max-width: 327px;
   width: 100%;
-  height: auto;
 }
 
 .tech li {
@@ -218,12 +225,12 @@ button:active {
 
 .project {
   margin: 24px auto;
-  background-image: url('images/mask-group.png');
+  background-image: url('/images/mask-group.png');
   background-repeat: no-repeat;
   background-size: contain;
   max-width: 327px;
   width: 100%;
-  max-height: 385px;
+  max-height: 386px;
   height: auto;
 }
 
@@ -243,7 +250,7 @@ button:active {
 }
 
 #about-section {
-  background-image: url("images/Frame.png");
+  background-image: url("/images/Frame.png");
   background-repeat: no-repeat;
   background-position: 100% 395px;
   width: 100%;
@@ -262,6 +269,7 @@ button:active {
 #about-section .normal {
   margin-bottom: 24px;
   width: 100%;
+  height: 148px;
 }
 
 .abt-line {
@@ -273,7 +281,7 @@ button:active {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 375px;
+  min-width: 375px;
   margin: 0 auto;
 }
 
@@ -289,19 +297,19 @@ button:active {
 }
 
 div > .lg-skill::before {
-  content: url("images/cube.png");
+  content: url("/images/cube.png");
   position: absolute;
   left: 3.2rem;
 }
 
 div > .libraries::before {
-  content: url("images/Rectangle.png");
+  content: url("/images/Rectangle.png");
   position: absolute;
   left: 2.5rem;
 }
 
 div > .tools::before {
-  content: url("images/circle.png");
+  content: url("/images/circle.png");
   position: absolute;
   left: 5.5rem;
 }
@@ -315,7 +323,7 @@ div > .tools::before {
 .contact-form {
   display: flex;
   flex-direction: column;
-  max-width: 375px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 0 24px;
@@ -330,7 +338,7 @@ div > .tools::before {
   text-align: center;
 }
 
-.mob-form {
+form {
   margin-top: 73px;
   padding-bottom: 124px;
 }
@@ -351,12 +359,7 @@ textarea {
   border: none;
 }
 
-input {
-  color: #979493;
-  max-width: 295px;
-}
-
-textarea#textarea-mobile {
+textarea {
   margin: 14px 0;
   height: 114px;
   padding: 12px;
@@ -395,10 +398,8 @@ hr.form-line {
   align-items: center;
 }
 
-#br {
+hr#br {
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-width: 375px;
   color: #dfe1e6;
 }
