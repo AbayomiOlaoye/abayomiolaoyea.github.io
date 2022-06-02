@@ -51,6 +51,20 @@
     gap: 1.5rem;
   }
 
+  ul.top li:hover {
+    transform: scale(1.05);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+
+  ul.top li:hover .d-link {
+    display: inline;
+    transform: scale(1.9);
+    transition: all;
+    transition-duration: 1s;
+  }
+
   #landing-page {
     position: relative;
     width: 100%;
