@@ -152,7 +152,7 @@
   .project:hover {
     transform: scale(1.1);
     transition-duration: 2s;
-    box-shadow: -1px 3px 12px 1px rgba(222,142,67,0.77);;
+    box-shadow: -1px 3px 12px 1px rgba(245, 88, 0, 0.77);
   }
 
   .project.card-1 {
