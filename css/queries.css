@@ -134,7 +134,11 @@
 
   button {
     height: 58px;
-    transition: 4s;
+    transition: none;
+  }
+
+  button:hover {
+    transform: scale(1.10);
   }
 
   .project {
@@ -143,6 +147,11 @@
     max-height: 435px;
     position: relative;
     cursor: pointer;
+  }
+
+  .project:hover {
+    transform: scale(1.1);
+    transition-duration: 2s;
   }
 
   .project.card-1 {
