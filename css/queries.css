@@ -51,6 +51,27 @@
     gap: 1.5rem;
   }
 
+  ul.top li:hover img {
+    transform: rotate3d(1, 1, 1, 360deg);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+
+  ul.top li:hover {
+    transform: scale(1.09);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+
+  ul.top li:hover .d-link {
+    display: inline;
+    transform: scale(1.9);
+    transition: all;
+    transition-duration: 1s;
+  }
+
   #landing-page {
     position: relative;
     width: 100%;
@@ -134,7 +155,7 @@
 
   button {
     height: 58px;
-    transition: none;
+    transition: background-color 0.5s;
   }
 
   button:hover {
@@ -151,7 +172,7 @@
 
   .project:hover {
     transform: scale(1.1);
-    transition-duration: 2s;
+    transition-duration: 0.9s;
     box-shadow: -1px 3px 12px 1px rgba(0, 0, 0, 0.77);
   }
 
