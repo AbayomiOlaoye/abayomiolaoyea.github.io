@@ -134,7 +134,7 @@
 
   button {
     height: 58px;
-    transition: none;
+    transition: 2s;
   }
 
   .project {
