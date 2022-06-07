@@ -7,6 +7,11 @@ This is the mobile version of my personal portfolio as beginning Software Develo
 - HTML
 - CSS
 
+## Live Version
+
+Here is a link to the deployed version of my responsive [portfolio website](https://mindprepdev.github.io/).
+Feel free to check it out and share your view about it. 
+
 ## Getting Started
 
 To get a local copy for practice or as a template, follow these simple steps.
