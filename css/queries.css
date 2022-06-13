@@ -38,12 +38,27 @@
   }
 
   .desktop-nav {
-    display: block;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #fff5e1;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+
+  .pad-link {
+    display: inline;
+    font-size: 1.125rem;
   }
 
   .nav-link {
     display: flex;
     gap: 1.5rem;
+    margin-top: 0;
   }
 
   .top-link {
