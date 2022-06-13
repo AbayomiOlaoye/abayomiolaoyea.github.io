@@ -6,7 +6,6 @@
   .nav-container {
     margin: 0 auto;
     width: 90%;
-    font-size: 1.25rem;
   }
 
   .mob-only,
@@ -171,7 +170,7 @@
   }
 
   .project:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition-duration: 0.9s;
     box-shadow: -1px 3px 12px 1px rgba(0, 0, 0, 0.77);
   }
