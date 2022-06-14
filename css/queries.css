@@ -48,11 +48,13 @@
     top: 0;
     right: 0;
     padding: 0;
+    z-index: 0;
   }
 
   .pad-link {
     display: inline;
-    font-size: 1.125rem;
+    font-size: 1.115rem;
+    padding: 0;
   }
 
   .nav-link {
@@ -363,7 +365,7 @@
   }
 
   .nav-link {
-    gap: 2.5rem;
+    gap: 1.8rem;
   }
 
   .container {

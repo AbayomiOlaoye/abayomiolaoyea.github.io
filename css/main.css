@@ -80,6 +80,7 @@ header {
   right: 0;
   padding: 0.75rem 1.5rem;
   z-index: 10;
+  transition: display 0.4s linear 0s;
 }
 
 .menu-btn {
@@ -87,13 +88,16 @@ header {
 }
 
 .close-nav {
+  position: relative;
+  left: 95%;
   margin-top: 1rem;
 }
 
 .pad-link {
   display: block;
   padding-top: 2.5rem;
-  font-size: 1.8rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
 }
 
 .nav-link {
