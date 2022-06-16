@@ -6,7 +6,6 @@
   .nav-container {
     margin: 0 auto;
     width: 90%;
-    font-size: 1.25rem;
   }
 
   .mob-only,
@@ -39,12 +38,29 @@
   }
 
   .desktop-nav {
-    display: block;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #fff5e1;
+    top: 0;
+    right: 0;
+    padding: 0;
+    z-index: 0;
+  }
+
+  .pad-link {
+    display: inline;
+    font-size: 0.9rem;
+    padding: 0;
   }
 
   .nav-link {
     display: flex;
     gap: 1.5rem;
+    margin-top: 0;
   }
 
   .top-link {
@@ -76,8 +92,8 @@
     position: relative;
     width: 100%;
     background-image: url("/images/Illustration-header.png");
-    background-position: top right -35%;
-    background-size: contain;
+    background-position: top right -45%;
+    background-size: auto;
   }
 
   .desk-only,
@@ -171,7 +187,7 @@
   }
 
   .project:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition-duration: 0.9s;
     box-shadow: -1px 3px 12px 1px rgba(0, 0, 0, 0.77);
   }
@@ -349,7 +365,7 @@
   }
 
   .nav-link {
-    gap: 2.5rem;
+    gap: 1.8rem;
   }
 
   .container {
@@ -378,7 +394,7 @@
   }
 
   #landing-page {
-    background-position: top right;
+    background-position: top -60px right -20px;
   }
 
   #works-section > div.container {

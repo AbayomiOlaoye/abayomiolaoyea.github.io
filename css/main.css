@@ -19,7 +19,7 @@ body {
 header {
   width: 100%;
   display: flex;
-  background-color: #3e3c3c;
+  background-color: #3c3a39;
 }
 
 .mob-nav {
@@ -31,8 +31,10 @@ header {
 
 .nav-container {
   font-family: 'Roboto', sans-serif;
+  position: relative;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  background-color: inherit;
   line-height: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -70,6 +72,46 @@ header {
 
 .desktop-nav {
   display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: inherit;
+  color: #fff5e1;
+  top: 0;
+  right: 0;
+  padding: 0.75rem 1.5rem;
+  z-index: 10;
+  transition: display 0.4s linear 0s;
+}
+
+.menu-btn {
+  display: block;
+}
+
+.close-nav {
+  position: relative;
+  height: 12px;
+  width: 12px;
+  left: 97%;
+  margin-top: 1rem;
+}
+
+.pad-link {
+  display: block;
+  padding-top: 2.5rem;
+  padding-left: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff5e1;
+}
+
+.nav-link {
+  margin-top: 1.5rem;
+}
+
+.nav-hr {
+  margin-top: 1rem;
+  border: 1px solid #6f6c6b;
 }
 
 a {
@@ -85,7 +127,6 @@ menu {
 .top-link {
   position: relative;
   display: flex;
-  justify-content: baseline;
   flex-wrap: wrap;
   gap: 1.3rem;
   padding-top: 1.4rem;
