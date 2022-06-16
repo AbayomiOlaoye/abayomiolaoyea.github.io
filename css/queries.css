@@ -107,31 +107,33 @@
   }
 
   #works-section > div.container {
+    background: #fff;
+  }
+
+  .project-details {
     display: grid;
     grid-template-areas:
-      "top top"
       "hype hype"
       "one two"
       "three four"
       "five six";
-    background: #fff;
+    width: 100%;
     gap: 24px;
   }
 
-  div.container .works-top {
+  .works-top {
     display: flex;
-    grid-area: top;
     justify-content: space-between;
-    text-align: left;
+    text-align: center;
     gap: 24px;
-    width: 100%;
+    width: 90%;
   }
 
   .recent-works {
     color: #091e42;
     line-height: 3.25rem;
     text-align: left;
-    width: 315px;
+    max-width: 315px;
     height: 52px;
   }
 
@@ -140,7 +142,7 @@
     max-width: 100%;
     width: 70%;
     height: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   div.multi-post {
@@ -397,9 +399,8 @@
     background-position: top -60px right -20px;
   }
 
-  #works-section > div.container {
+  .project-details {
     grid-template-areas:
-      "top top top"
       "hype hype hype"
       "one two three"
       "four five six";
