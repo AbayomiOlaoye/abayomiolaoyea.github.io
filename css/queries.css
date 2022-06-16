@@ -53,7 +53,7 @@
 
   .pad-link {
     display: inline;
-    font-size: 1.115rem;
+    font-size: 0.9rem;
     padding: 0;
   }
 
@@ -92,8 +92,8 @@
     position: relative;
     width: 100%;
     background-image: url("/images/Illustration-header.png");
-    background-position: top right -35%;
-    background-size: contain;
+    background-position: top right -45%;
+    background-size: auto;
   }
 
   .desk-only,
@@ -394,7 +394,7 @@
   }
 
   #landing-page {
-    background-position: top right;
+    background-position: top -60px right -20px;
   }
 
   #works-section > div.container {
