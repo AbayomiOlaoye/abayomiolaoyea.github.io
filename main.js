@@ -277,10 +277,12 @@ const modalInformation = [
 // ------Modal container ------ //
 const modalContainer = document.createElement('div');
 modalContainer.classList = 'modal-ctn';
+document.querySelector('.pop').appendChild(modalContainer);
 
 // Header div
 const modalHeader = document.createElement('div');
 modalHeader.classList = 'modal-header-ctn';
+modalContainer.appendChild(modalHeader);
 
 // Iterations for two h1 to display differently big and small screens
 for (let title = 0; title < 2; title += 1) {
@@ -292,6 +294,7 @@ for (let title = 0; title < 2; title += 1) {
     modalTitleOne.textContent = modalInformation[0].projectNameD;
     modalTitleOne.classList.add('title-one', 'desk-only');
   }
+  modalHeader.appendChild(modalTitleOne);
 }
 
 // Modal exit button
@@ -301,6 +304,7 @@ cancelBtn.src = './images/cancel.svg';
 cancelBtn.alt = 'exit project page';
 cancelBtn.width = '12';
 cancelBtn.height = '12';
+modalHeader.appendChild(cancelBtn);
 
 // Create an unordered list
 const techSkills = document.createElement('ul');
@@ -316,25 +320,26 @@ for (let set = 0; set < modalInformation[0].projectTechnologies.length; set += 1
     skillSet.textContent += Ruby;
   }
   techSkills.appendChild(skillSet);
+  modalContainer.appendChild(techSkills);
 }
 
 // Image-Text-Button div
 const modalTheme = document.createElement('div');
 modalTheme.classList = 'pivot-ctn';
+
+// Project Image
 const modalImage = document.createElement('img');
 modalImage.className = 'project-snapshot';
 modalImage.src = modalInformation[0].projectFeaturedImage;
 modalImage.alt = 'A reallly nice image about the project';
 modalImage.width = '300';
 modalImage.height = '210';
-
-// A separate div for the text and button
-const textButtonCtn = document.createElement('div');
-textButtonCtn.className = 'grp-textsBtn';
+modalTheme.appendChild(modalImage);
 
 // Both paragraphs
+let projectDescription;
 for (let txt = 0; txt < 2; txt += 1) {
-  const projectDescription = document.createElement('p');
+  projectDescription = document.createElement('p');
   projectDescription.classList = 'modal-texts';
   if (txt < 1) {
     projectDescription.classList.add('mob-only');
@@ -345,11 +350,26 @@ for (let txt = 0; txt < 2; txt += 1) {
   }
 }
 
+// A separate div for the text and button
+const textButtonCtn = document.createElement('div');
+textButtonCtn.className = 'grp-textsBtn';
+textButtonCtn.appendChild(projectDescription);
+modalTheme.appendChild(textButtonCtn);
+
+// Button div container
+const buttonGrp = document.createElement('div');
+buttonGrp.className = 'button-grp';
+textButtonCtn.appendChild(buttonGrp);
+
 // Buttons of interactivity
 for (let btn = 0; btn < 2; btn += 0) {
   const projectLink = document.createElement('a');
   if (btn === 0) {
     projectLink.href = modalInformation[0].projectLiveLink;
-    projectLink.innerHTML = 'See Live <img src="./images/live.png"></img>';
+    projectLink.innerHTML = 'See Live <img class="live-deploy" src="./images/live.png" alt="click for live version"></img>';
+  } else {
+    projectLink.href = modalInformation[0].projectSourceRepo;
+    projectLink.innerHTML = 'See Source <img class="git-modal" src="./images/github-wht.svg" alt="github link"></img>';
   }
+  buttonGrp.appendChild(projectLink);
 }
