@@ -101,7 +101,7 @@ const projectInfo = [
 ]; // End of Objects collection
 
 // Logic Object Manipulation Starts Here:
-const workSection = document.querySelector('.testNet'); // To be changed later
+const workSection = document.querySelector('#project-container'); // To be changed later
 const projectDetails = document.createElement('div');
 projectDetails.className = 'project-details';
 for (let work = 0; work < projectInfo.length; work += 1) {
@@ -247,7 +247,7 @@ for (let work = 0; work < projectInfo.length; work += 1) {
     } else {
       buttonBg.classList.add('btn-bg', 'cursor-hover-bg');
     }
-    projectDetails.appendChild(buttonBg);
+    projectContainer.appendChild(buttonBg);
 
     const buttonSubmit = document.createElement('button');
     buttonSubmit.type = 'submit';
