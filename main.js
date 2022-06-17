@@ -352,7 +352,4 @@ for (let btn = 0; btn < 2; btn += 0) {
     projectLink.href = modalInformation[0].projectLiveLink;
     projectLink.innerHTML = 'See Live <img src="./images/live.png"></img>';
   }
-  
-  
-
 }
