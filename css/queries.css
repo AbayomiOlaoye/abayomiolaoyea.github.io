@@ -101,7 +101,8 @@
     display: flex;
   }
 
-  .container {
+  .container,
+  .project-details {
     margin: 0 auto;
     width: 90%;
   }
@@ -117,7 +118,6 @@
       "one two"
       "three four"
       "five six";
-    width: 100%;
     gap: 24px;
   }
 
