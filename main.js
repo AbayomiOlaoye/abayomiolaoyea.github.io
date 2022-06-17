@@ -257,3 +257,102 @@ for (let work = 0; work < projectInfo.length; work += 1) {
   workSection.appendChild(projectDetails);
   projectDetails.appendChild(projectContainer);
 }
+
+const modalInformation = [
+  // Project Briefs for All Screen Sizes
+  {
+    projectId: 'Modal menu',
+    projectNameM: 'Multi Post Stores',
+    projectNameD: 'Keeping track of hundreds  of components website',
+    projectSummaryM: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent...",
+    projectSummaryD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    projectFeaturedImage: './images/modal-image.png',
+    projectTechnologies: ['html', 'bootstrap', 'Ruby on rails'],
+    projectLiveLink: '#',
+    projectSourceRepo: 'github.com/MindPrepDev',
+  },
+];
+
+// Constructing the Modal pop-up card //
+// ------Modal container ------ //
+const modalContainer = document.createElement('div');
+modalContainer.classList = 'modal-ctn';
+
+// Header div
+const modalHeader = document.createElement('div');
+modalHeader.classList = 'modal-header-ctn';
+
+// Iterations for two h1 to display differently big and small screens
+for (let title = 0; title < 2; title += 1) {
+  const modalTitleOne = document.createElement('h1');
+  if (title < 1) {
+    modalTitleOne.textContent = modalInformation[0].projectNameM;
+    modalTitleOne.classList.add('title-one', 'mob-only');
+  } else {
+    modalTitleOne.textContent = modalInformation[0].projectNameD;
+    modalTitleOne.classList.add('title-one', 'desk-only');
+  }
+}
+
+// Modal exit button
+const cancelBtn = document.createElement('img');
+cancelBtn.classList.add('cancel-nav', 'modalExit');
+cancelBtn.src = './images/cancel.svg';
+cancelBtn.alt = 'exit project page';
+cancelBtn.width = '12';
+cancelBtn.height = '12';
+
+// Create an unordered list
+const techSkills = document.createElement('ul');
+techSkills.classList.add('tech', 'modal-skills');
+const [html, bootstrap, Ruby] = modalInformation[0].projectTechnologies;
+for (let set = 0; set < modalInformation[0].projectTechnologies.length; set += 1) {
+  const skillSet = document.createElement('li');
+  if (set === 0) {
+    skillSet.textContent += html;
+  } else if (set === 1) {
+    skillSet.textContent += bootstrap;
+  } else {
+    skillSet.textContent += Ruby;
+  }
+  techSkills.appendChild(skillSet);
+}
+
+// Image-Text-Button div
+const modalTheme = document.createElement('div');
+modalTheme.classList = 'pivot-ctn';
+const modalImage = document.createElement('img');
+modalImage.className = 'project-snapshot';
+modalImage.src = modalInformation[0].projectFeaturedImage;
+modalImage.alt = 'A reallly nice image about the project';
+modalImage.width = '300';
+modalImage.height = '210';
+
+// A separate div for the text and button
+const textButtonCtn = document.createElement('div');
+textButtonCtn.className = 'grp-textsBtn';
+
+// Both paragraphs
+for (let txt = 0; txt < 2; txt += 1) {
+  const projectDescription = document.createElement('p');
+  projectDescription.classList = 'modal-texts';
+  if (txt < 1) {
+    projectDescription.classList.add('mob-only');
+    projectDescription.textContent = modalInformation[0].projectSummaryM;
+  } else {
+    projectDescription.classList.add('desk-only');
+    projectDescription.textContent = modalInformation[0].projectSummaryD;
+  }
+}
+
+// Buttons of interactivity
+for (let btn = 0; btn < 2; btn += 0) {
+  const projectLink = document.createElement('a');
+  if (btn === 0) {
+    projectLink.href = modalInformation[0].projectLiveLink;
+    projectLink.innerHTML = 'See Live <img src="./images/live.png"></img>';
+  }
+  
+  
+
+}
