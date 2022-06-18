@@ -386,3 +386,21 @@ cancelBtn.addEventListener('click', () => {
 //     popModal.style.display = 'none';
 //   }
 // });
+
+// Form Validation
+// document.querySelectorAll('.contact-btn').forEach((button) => {
+//   button.addEventListener('click', (event) => {
+//     const emailAdd = document.querySelectorAll('input[type=email').value;
+//     const errorPop = document.querySelector('.error-index');
+//     // Check for case validation
+//     const isLowerCase = (str) => str === str.toLowerCase();
+//     if (!isLowerCase(emailAdd)) {
+//       event.preventDefault();
+//       errorPop.innerHTML = 'Almost! Let\'s type all in lowercase this time!';
+//       // Hide error after 3 seconds.
+//       setTimeout(() => {
+//         errorPop.innerHTML = 'Got it?';
+//       }, 3000);
+//     }
+//   });
+// })
