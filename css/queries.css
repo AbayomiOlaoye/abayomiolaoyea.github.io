@@ -317,7 +317,6 @@
     text-align: left;
   }
 
-
   .contact-btn {
     width: auto;
     height: 58px;
@@ -465,6 +464,7 @@
   font-family: 'Crete round', sans-serif;
   font-weight: 400;
 }
+
 .pivot-ctn {
   display: flex;
   flex-direction: row;
@@ -499,9 +499,9 @@
   gap: 12px;
 }
 
-/* .modal-texts {
+.modal-texts {
   max-height: 336px;
   width: 100%;
   overflow: hidden;
   line-height: 30px;
-} */
+}
