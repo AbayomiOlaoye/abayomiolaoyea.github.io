@@ -252,156 +252,153 @@ document.addEventListener('DOMContentLoaded', () => {
     workSection.appendChild(projectDetail);
   }
 
+  // Project Briefs for All Screen Sizes
+  const modalInformation = [
+    {
+      projectId: 'Modal menu',
+      projectNameM: 'Multi Post Stores',
+      projectNameD: 'Keeping track of hundreds  of components website',
+      projectSummaryM: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+      projectSummaryD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      projectFeaturedImage: './images/modal-image.png',
+      projectTechnologies: ['html', 'bootstrap', 'Ruby on rails'],
+      projectLiveLink: '#',
+      projectSourceRepo: 'https://www.github.com/MindPrepDev',
+    },
+  ];
 
-// Project Briefs for All Screen Sizes
-    const modalInformation = [
-      {
-        projectId: 'Modal menu',
-        projectNameM: 'Multi Post Stores',
-        projectNameD: 'Keeping track of hundreds  of components website',
-        projectSummaryM: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-        projectSummaryD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-        projectFeaturedImage: './images/modal-image.png',
-        projectTechnologies: ['html', 'bootstrap', 'Ruby on rails'],
-        projectLiveLink: '#',
-        projectSourceRepo: 'https://www.github.com/MindPrepDev',
-      },
-    ];
+  // Constructing the Modal pop-up card //
+  // ------Modal container ------ //
+  const modalContainer = document.createElement('div');
+  modalContainer.classList = 'modal-ctn';
+  document.querySelector('.pop').appendChild(modalContainer);
 
-    // Constructing the Modal pop-up card //
-    // ------Modal container ------ //
-    const modalContainer = document.createElement('div');
-    modalContainer.classList = 'modal-ctn';
-    document.querySelector('.pop').appendChild(modalContainer);
+  // Header div
+  const modalHeader = document.createElement('div');
+  modalHeader.classList = 'modal-header-ctn';
+  modalContainer.appendChild(modalHeader);
 
-    // Header div
-    const modalHeader = document.createElement('div');
-    modalHeader.classList = 'modal-header-ctn';
-    modalContainer.appendChild(modalHeader);
-
-    // Iterations for two h1 to display differently big and small screens
-    for (let title = 0; title < 2; title += 1) {
-      const modalTitle = document.createElement('h1');
-      if (title < 1) {
-        modalTitle.textContent = modalInformation[0].projectNameM;
-        modalTitle.classList.add('title-one', 'mob-only');
-      } else {
-        modalTitle.textContent = modalInformation[0].projectNameD;
-        modalTitle.classList.add('title-one', 'desk-only');
-      }
-      modalHeader.appendChild(modalTitle);
+  // Iterations for two h1 to display differently big and small screens
+  for (let title = 0; title < 2; title += 1) {
+    const modalTitle = document.createElement('h1');
+    if (title < 1) {
+      modalTitle.textContent = modalInformation[0].projectNameM;
+      modalTitle.classList.add('title-one', 'mob-only');
+    } else {
+      modalTitle.textContent = modalInformation[0].projectNameD;
+      modalTitle.classList.add('title-one', 'desk-only');
     }
+    modalHeader.appendChild(modalTitle);
+  }
 
-    // // Modal exit button
-    const cancelBtn = document.createElement('img');
-    cancelBtn.classList.add('cancel-nav', 'modalExit');
-    cancelBtn.src = './images/cancel.svg';
-    cancelBtn.alt = 'exit project page';
-    cancelBtn.width = '12';
-    cancelBtn.height = '12';
-    modalHeader.appendChild(cancelBtn);
+  // // Modal exit button
+  const cancelBtn = document.createElement('img');
+  cancelBtn.classList.add('cancel-nav', 'modalExit');
+  cancelBtn.src = './images/cancel.svg';
+  cancelBtn.alt = 'exit project page';
+  cancelBtn.width = '12';
+  cancelBtn.height = '12';
+  modalHeader.appendChild(cancelBtn);
 
-    // Create an unordered list
-    const techSkills = document.createElement('ul');
-    techSkills.classList.add('techo', 'modal-skills');
-    const [html, bootstrap, Ruby] = modalInformation[0].projectTechnologies;
-    for (let set = 0; set < modalInformation[0].projectTechnologies.length; set += 1) {
-      const skillSet = document.createElement('li');
-      skillSet.classList = 'modal-list';
-      if (set === 0) {
-        skillSet.textContent += html;
-      } else if (set === 1) {
-        skillSet.textContent += bootstrap;
-      } else {
-        skillSet.textContent += Ruby;
-      }
-      techSkills.appendChild(skillSet);
-      modalContainer.appendChild(techSkills);
+  // Create an unordered list
+  const techSkills = document.createElement('ul');
+  techSkills.classList.add('techo', 'modal-skills');
+  const [html, bootstrap, Ruby] = modalInformation[0].projectTechnologies;
+  for (let set = 0; set < modalInformation[0].projectTechnologies.length; set += 1) {
+    const skillSet = document.createElement('li');
+    skillSet.classList = 'modal-list';
+    if (set === 0) {
+      skillSet.textContent += html;
+    } else if (set === 1) {
+      skillSet.textContent += bootstrap;
+    } else {
+      skillSet.textContent += Ruby;
     }
+    techSkills.appendChild(skillSet);
+    modalContainer.appendChild(techSkills);
+  }
 
-    // Image-Text-Button div
-    const modalTheme = document.createElement('div');
-    modalTheme.classList = 'pivot-ctn';
-    modalContainer.appendChild(modalTheme);
+  // Image-Text-Button div
+  const modalTheme = document.createElement('div');
+  modalTheme.classList = 'pivot-ctn';
+  modalContainer.appendChild(modalTheme);
 
-    // Project Image
-    const modalImage = document.createElement('img');
-    modalImage.className = 'project-snapshot';
-    modalImage.src = modalInformation[0].projectFeaturedImage;
-    modalImage.alt = 'A reallly nice image about the project';
-    modalImage.width = '300';
-    modalImage.height = '210';
-    modalTheme.appendChild(modalImage);
+  // Project Image
+  const modalImage = document.createElement('img');
+  modalImage.className = 'project-snapshot';
+  modalImage.src = modalInformation[0].projectFeaturedImage;
+  modalImage.alt = 'A reallly nice image about the project';
+  modalImage.width = '300';
+  modalImage.height = '210';
+  modalTheme.appendChild(modalImage);
 
-    // Both paragraphs
-    const projectDescription = document.createElement('p');
-    projectDescription.classList.add('modal-texts', 'mob-only');
-    projectDescription.textContent = modalInformation[0].projectSummaryM;
+  // Both paragraphs
+  const projectDescription = document.createElement('p');
+  projectDescription.classList.add('modal-texts', 'mob-only');
+  projectDescription.textContent = modalInformation[0].projectSummaryM;
 
-    const projectDescriptionD = document.createElement('p');
-    projectDescriptionD.classList.add('modal-texts', 'desk-only');
-    projectDescriptionD.textContent = modalInformation[0].projectSummaryD;
+  const projectDescriptionD = document.createElement('p');
+  projectDescriptionD.classList.add('modal-texts', 'desk-only');
+  projectDescriptionD.textContent = modalInformation[0].projectSummaryD;
 
-    // A separate div for the text and button
-    const textButtonCtn = document.createElement('div');
-    textButtonCtn.className = 'grp-textsBtn';
-    modalTheme.appendChild(textButtonCtn);
+  // A separate div for the text and button
+  const textButtonCtn = document.createElement('div');
+  textButtonCtn.className = 'grp-textsBtn';
+  modalTheme.appendChild(textButtonCtn);
 
-    // Button div container
-    const buttonGrp = document.createElement('div');
-    buttonGrp.className = 'button-grp';
-    textButtonCtn.append(projectDescription, projectDescriptionD, buttonGrp);
-
-    // Buttons of interactivity
-    for (let btn = 0; btn < 2; btn += 1) {
-      const projectLink = document.createElement('a');
-      if (btn === 0) {
-        projectLink.href = modalInformation[0].projectLiveLink;
-        projectLink.innerHTML = 'See Live <img class="live-deploy" src="./images/live.png" alt="click for live version"></img>';
-      } else {
-        projectLink.href = modalInformation[0].projectSourceRepo;
-        projectLink.innerHTML = 'See Source <img class="git-modal" src="./images/github-wht.svg" alt="github link"></img>';
-      }
-      buttonGrp.appendChild(projectLink);
+  // Button div container
+  const buttonGrp = document.createElement('div');
+  buttonGrp.className = 'button-grp';
+  textButtonCtn.append(projectDescription, projectDescriptionD, buttonGrp);
+  // Buttons of interactivity
+  for (let btn = 0; btn < 2; btn += 1) {
+    const projectLink = document.createElement('a');
+    if (btn === 0) {
+      projectLink.href = modalInformation[0].projectLiveLink;
+      projectLink.innerHTML = 'See Live <img class="live-deploy" src="./images/live.png" alt="click for live version"></img>';
+    } else {
+      projectLink.href = modalInformation[0].projectSourceRepo;
+      projectLink.innerHTML = 'See Source <img class="git-modal" src="./images/github-wht.svg" alt="github link"></img>';
     }
+    buttonGrp.appendChild(projectLink);
+  }
 
-    // -------- Modal Toggling ---------- //
-    // Get the Popmodal
-    const popModal = document.querySelector('.pop');
+  // -------- Modal Toggling ---------- //
+  // Get the Popmodal
+  const popModal = document.querySelector('.pop');
 
-    // Buttons (See Project) opens the modal
-    const openModal = document.querySelectorAll('#project-container button');
-    openModal.forEach((button) => {
-      button.addEventListener('click', () => {
-        popModal.style.display = 'block';
-      });
+  // Buttons (See Project) opens the modal
+  const openModal = document.querySelectorAll('#project-container button');
+  openModal.forEach((button) => {
+    button.addEventListener('click', () => {
+      popModal.style.display = 'block';
     });
+  });
 
-    // cancelBtn closes the modal
-    cancelBtn.addEventListener('click', () => {
-      popModal.style.display = 'none';
-    });
+  // cancelBtn closes the modal
+  cancelBtn.addEventListener('click', () => {
+    popModal.style.display = 'none';
+  });
 
-    // // When the user clicks anywhere outside of the modal, close it
-    // window.addEventListener('click', (e) => {
-    //   if (e.target === popModal) {
+  // When the user clicks anywhere outside of the modal, close it
+  window.addEventListener('click', (e) => {
+    if (e.target === popModal) {
     //     popModal.style.display = 'none';
-    //   }
-    // });
- });
+    }
+  });
+});
 
 // Form Validation
- const form = document.querySelector('.form');
- const email = document.querySelector('#email');
- const error = document.querySelector('.error-index');
- 
- form.addEventListener('submit', (event) => {
-    if (email.value !== email.value.toLowerCase()) {
-      error.textContent = 'Almost there! Use all-lowercase this time.';
-      error.style.color = 'red';
-      event.preventDefault();
-      setTimeout(() => {
-       error.innerHTML = '';
-     }, 5000);
-    }
- });
+const form = document.querySelector('.form');
+const email = document.querySelector('#email');
+const error = document.querySelector('.error-index');
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    error.textContent = 'Almost there! Use all-lowercase this time.';
+    error.style.color = 'red';
+    event.preventDefault();
+    setTimeout(() => {
+      error.innerHTML = '';
+    }, 5000);
+  }
+});
