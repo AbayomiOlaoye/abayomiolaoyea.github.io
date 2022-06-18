@@ -385,6 +385,8 @@ div > .tools::before {
 .contact-form {
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -401,7 +403,7 @@ div > .tools::before {
 }
 
 form {
-  margin-top: 73px;
+  margin: 73px auto 0 auto;
   padding-bottom: 124px;
 }
 
@@ -432,6 +434,12 @@ textarea {
 .contact-btn {
   width: 131px;
   height: 48px;
+}
+
+.error-index {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
 }
 
 hr.form-line {

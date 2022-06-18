@@ -312,20 +312,11 @@
     border-bottom: 1px solid #dbd8d7;
   }
 
-  input,
-  textarea {
-    max-width: 298px;
-    margin: 14px 72px;
-  }
-
-  form#lg-screen {
-    display: inline;
+  form {
     margin-top: 0;
+    text-align: left;
   }
 
-  .desk-only textarea {
-    min-width: 298px;
-  }
 
   .contact-btn {
     width: auto;
@@ -333,7 +324,7 @@
   }
 
   hr.form-line {
-    color: #dbd8d7;
+    display: none;
   }
 
   .project.one {
@@ -446,21 +437,13 @@
     margin: 0 auto;
   }
 
-  form#lg-screen input {
-    margin: 1rem;
-    max-width: 325px;
-  }
-
-  form#lg-screen input[type=email] {
-    max-width: 684px;
-  }
-
-  form#lg-screen {
+  form {
     padding: 0 0 124px 0;
     width: 70%;
+    text-align: left;
   }
 
-  form.desk-only textarea {
+  form textarea {
     min-width: 684px;
     margin: 0 16px 8px 16px;
   }
