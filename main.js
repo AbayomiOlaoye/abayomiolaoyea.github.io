@@ -380,9 +380,9 @@ cancelBtn.addEventListener('click', () => {
   popModal.style.display = 'none';
 });
 
-// // When the user clicks anywhere outside of the modal, close it
-// window.addEventListener('click', (e) => {
-//   if (e.target === popModal) {
-//     popModal.style.display = 'none';
-//   }
-// });
+//  When the user clicks anywhere outside of the modal, close it
+ window.addEventListener('click', (e) => {
+   if (e.target === popModal) {
+     popModal.style.display = 'none';
+   }
+ });
