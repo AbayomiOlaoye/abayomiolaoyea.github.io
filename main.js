@@ -257,12 +257,12 @@ const modalInformation = [
     projectId: 'Modal menu',
     projectNameM: 'Multi Post Stores',
     projectNameD: 'Keeping track of hundreds  of components website',
-    projectSummaryM: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent...",
+    projectSummaryM: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     projectSummaryD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     projectFeaturedImage: './images/modal-image.png',
     projectTechnologies: ['html', 'bootstrap', 'Ruby on rails'],
     projectLiveLink: '#',
-    projectSourceRepo: 'github.com/MindPrepDev',
+    projectSourceRepo: 'https://www.github.com/MindPrepDev',
   },
 ];
 
@@ -301,10 +301,11 @@ modalHeader.appendChild(cancelBtn);
 
 // Create an unordered list
 const techSkills = document.createElement('ul');
-techSkills.classList.add('tech', 'modal-skills');
+techSkills.classList.add('techo', 'modal-skills');
 const [html, bootstrap, Ruby] = modalInformation[0].projectTechnologies;
 for (let set = 0; set < modalInformation[0].projectTechnologies.length; set += 1) {
   const skillSet = document.createElement('li');
+  skillSet.classList = 'modal-list';
   if (set === 0) {
     skillSet.textContent += html;
   } else if (set === 1) {
@@ -361,3 +362,27 @@ for (let btn = 0; btn < 2; btn += 1) {
   }
   buttonGrp.appendChild(projectLink);
 }
+
+// -------- Modal Toggling ---------- //
+// Get the Popmodal
+const popModal = document.querySelectorAll('.pop');
+
+// Buttons (See Project) opens the modal
+const openModal = document.querySelectorAll('#project-container button');
+openModal.forEach((button) => {
+  button.addEventListener('click', () => {
+    popModal.style.display = 'block';
+  });
+});
+
+// cancelBtn closes the modal
+cancelBtn.addEventListener('click', () => {
+  popModal.style.display = 'none';
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener('click', (e) => {
+  if (e.target === popModal) {
+    popModal.style.display = 'none';
+  }
+});

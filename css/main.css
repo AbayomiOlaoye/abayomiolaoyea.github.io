@@ -188,7 +188,7 @@ div.container .works-top {
 
 section.sect-container {
   padding: 7.5rem 1.5rem 8.125rem 1.5rem;
-  position: relative;
+  /* position: relative; */
 }
 
 .inline-hr {
@@ -255,11 +255,12 @@ section.sect-container {
   width: 100%;
 }
 
-button {
+button,
+.button-grp a {
   background-color: #ff6b00;
   border: none;
   padding: 12px 10px;
-  height: 100%;
+  height: auto;
   width: auto;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -466,7 +467,92 @@ hr#br {
 
 .pop {
   position: absolute;
-  display: block;
+  display: none;
   z-index: 1000;
-  background-color: #3c3a39;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 1rem;
+  height: 850px;
+  margin: 0 auto;
+  backdrop-filter: blur(0.5);
+  background-color: rgba(22, 19, 19, 0.9);
+  overflow: auto;
+}
+
+.modalExit {
+  transition: width 1s ease-in-out, hieght 1s ease-in-out;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.modalExit:hover {
+  transform: scale(1.5);
+}
+
+.modal-ctn {
+  background-color: #fff;
+  margin: 1rem auto;
+  padding: 2rem 1rem 1.25rem 1rem;
+  width: 95%;
+}
+
+.modal-header-ctn {
+  display: flex;
+  justify-content: space-between;
+  height: 82px;
+}
+
+.title-one {
+  color: #172b4d;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.modal-skills {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #3c3a39;
+  width: 100%;
+}
+
+.modal-list {
+  color: #3c3a39;
+  border: 1px solid #dfe1e6;
+  padding: 10px 12px;
+}
+
+.pivot-ctn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #091e42;
+}
+
+.project-snapshot {
+  width: 100%;
+  height: auto;
+  margin: 0.8rem 0 1.5rem 0;
+}
+
+.button-grp {
+  position: relative;
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.button-grp a:hover {
+  opacity: 90%;
+  background-color: #e05304;
+}
+
+.button-grp img {
+  position: relative;
+  top: 3px;
+  margin-left: 0.5rem;
 }
