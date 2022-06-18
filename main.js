@@ -395,13 +395,13 @@ document.addEventListener('DOMContentLoaded', () => {
  const email = document.querySelector('#email');
  const error = document.querySelector('.error-index');
  
-//  form.addEventListener('submit', (event) => {
-//    if (email.value !== email.value.toLowerCase()) {
-//      error.textContent = 'Almost there! Use all-lowercase this time.';
-//      error.style.color = 'red';
-//      event.preventDefault();
-//      setTimeout(() => {
-//       error.innerHTML = '';
-//     }, 5000);
-//    }
-//  });
+ form.addEventListener('submit', (event) => {
+    if (email.value !== email.value.toLowerCase()) {
+      error.textContent = 'Almost there! Use all-lowercase this time.';
+      error.style.color = 'red';
+      event.preventDefault();
+      setTimeout(() => {
+       error.innerHTML = '';
+     }, 5000);
+    }
+ });
