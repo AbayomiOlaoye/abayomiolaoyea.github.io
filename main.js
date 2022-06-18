@@ -20,7 +20,6 @@ padLinks.forEach((menu) => {
 // JavaScript Objects for project pop ups //
 const projectInfo = [
   {
-    projectId: 0,
     projectName: 'Multi-Post Stores',
     projectSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     projectFeaturedImage: './images/hype-project.png',
@@ -30,7 +29,6 @@ const projectInfo = [
   },
 
   {
-    projectId: 1,
     projectNameM: 'Professional Art Printing Data',
     projectSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard.",
     projectFeaturedImage: '',
@@ -41,7 +39,6 @@ const projectInfo = [
   },
 
   {
-    projectId: 2,
     projectNameM: 'Professional Art Printing Data',
     projectNameD: 'Data Dashboard Healthcare',
     projectSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard.",
@@ -53,7 +50,6 @@ const projectInfo = [
   },
 
   {
-    projectId: 3,
     projectNameM: 'Professional Art Printing Data',
     projectNameD: 'Website Portfolio',
     projectSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard.",
@@ -65,7 +61,6 @@ const projectInfo = [
   },
 
   {
-    projectId: 1,
     projectNameM: 'Professional Art Printing Data',
     projectSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard.",
     projectFeaturedImage: '',
@@ -76,7 +71,6 @@ const projectInfo = [
   },
 
   {
-    projectId: 2,
     projectNameM: 'Professional Art Printing Data',
     projectNameD: 'Data Dashboard Healthcare',
     projectSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard.",
@@ -88,7 +82,6 @@ const projectInfo = [
   },
 
   {
-    projectId: 3,
     projectNameM: 'Professional Art Printing Data',
     projectNameD: 'Website Portfolio',
     projectSummary: "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard.",
@@ -101,12 +94,12 @@ const projectInfo = [
 ]; // End of Objects collection
 
 // Logic Object Manipulation Starts Here:
-const workSection = document.querySelector('#project-container'); // To be changed later
-const projectDetails = document.createElement('div');
-projectDetails.className = 'project-details';
+const workSection = document.querySelector('#project-container');
+const projectDetail = document.createElement('div');
+projectDetail.className = 'project-details';
+let projectContainer;
 for (let work = 0; work < projectInfo.length; work += 1) {
-  const projectContainer = document.createElement('div');
-  // projectDetails.appendChild(projectContainer);
+  projectContainer = document.createElement('div');
   if (work === 0) {
     projectContainer.classList = 'multi-post';
 
@@ -254,12 +247,12 @@ for (let work = 0; work < projectInfo.length; work += 1) {
     buttonSubmit.textContent = 'See Project';
     buttonBg.appendChild(buttonSubmit);
   }
-  workSection.appendChild(projectDetails);
-  projectDetails.appendChild(projectContainer);
+  projectDetail.appendChild(projectContainer);
+  workSection.appendChild(projectDetail);
 }
 
+// Project Briefs for All Screen Sizes
 const modalInformation = [
-  // Project Briefs for All Screen Sizes
   {
     projectId: 'Modal menu',
     projectNameM: 'Multi Post Stores',
@@ -286,18 +279,18 @@ modalContainer.appendChild(modalHeader);
 
 // Iterations for two h1 to display differently big and small screens
 for (let title = 0; title < 2; title += 1) {
-  const modalTitleOne = document.createElement('h1');
+  const modalTitle = document.createElement('h1');
   if (title < 1) {
-    modalTitleOne.textContent = modalInformation[0].projectNameM;
-    modalTitleOne.classList.add('title-one', 'mob-only');
+    modalTitle.textContent = modalInformation[0].projectNameM;
+    modalTitle.classList.add('title-one', 'mob-only');
   } else {
-    modalTitleOne.textContent = modalInformation[0].projectNameD;
-    modalTitleOne.classList.add('title-one', 'desk-only');
+    modalTitle.textContent = modalInformation[0].projectNameD;
+    modalTitle.classList.add('title-one', 'desk-only');
   }
-  modalHeader.appendChild(modalTitleOne);
+  modalHeader.appendChild(modalTitle);
 }
 
-// Modal exit button
+// // Modal exit button
 const cancelBtn = document.createElement('img');
 cancelBtn.classList.add('cancel-nav', 'modalExit');
 cancelBtn.src = './images/cancel.svg';
@@ -326,6 +319,7 @@ for (let set = 0; set < modalInformation[0].projectTechnologies.length; set += 1
 // Image-Text-Button div
 const modalTheme = document.createElement('div');
 modalTheme.classList = 'pivot-ctn';
+modalContainer.appendChild(modalTheme);
 
 // Project Image
 const modalImage = document.createElement('img');
@@ -337,32 +331,26 @@ modalImage.height = '210';
 modalTheme.appendChild(modalImage);
 
 // Both paragraphs
-let projectDescription;
-for (let txt = 0; txt < 2; txt += 1) {
-  projectDescription = document.createElement('p');
-  projectDescription.classList = 'modal-texts';
-  if (txt < 1) {
-    projectDescription.classList.add('mob-only');
-    projectDescription.textContent = modalInformation[0].projectSummaryM;
-  } else {
-    projectDescription.classList.add('desk-only');
-    projectDescription.textContent = modalInformation[0].projectSummaryD;
-  }
-}
+const projectDescription = document.createElement('p');
+projectDescription.classList.add('modal-texts', 'mob-only');
+projectDescription.textContent = modalInformation[0].projectSummaryM;
+
+const projectDescriptionD = document.createElement('p');
+projectDescriptionD.classList.add('modal-texts', 'desk-only');
+projectDescriptionD.textContent = modalInformation[0].projectSummaryD;
 
 // A separate div for the text and button
 const textButtonCtn = document.createElement('div');
 textButtonCtn.className = 'grp-textsBtn';
-textButtonCtn.appendChild(projectDescription);
 modalTheme.appendChild(textButtonCtn);
 
 // Button div container
 const buttonGrp = document.createElement('div');
 buttonGrp.className = 'button-grp';
-textButtonCtn.appendChild(buttonGrp);
+textButtonCtn.append(projectDescription, projectDescriptionD, buttonGrp);
 
 // Buttons of interactivity
-for (let btn = 0; btn < 2; btn += 0) {
+for (let btn = 0; btn < 2; btn += 1) {
   const projectLink = document.createElement('a');
   if (btn === 0) {
     projectLink.href = modalInformation[0].projectLiveLink;
