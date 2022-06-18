@@ -466,15 +466,15 @@ hr#br {
 /* Styling for Modal Menu */
 
 .pop {
-  position: absolute;
-  display: none;
+  position: fixed;
+  display: block;
   z-index: 1000;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   padding: 0 1rem;
-  height: 850px;
+  height: 100%;
   margin: 0 auto;
   backdrop-filter: blur(5px);
   background-color: rgba(22, 19, 19, 0.9);
@@ -496,6 +496,7 @@ hr#br {
   margin: 1rem auto;
   padding: 2rem 1rem 1.25rem 1rem;
   width: 95%;
+  height: 100%;
 }
 
 .modal-header-ctn {
@@ -513,6 +514,7 @@ hr#br {
 
 .modal-skills {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   font-weight: 600;
   font-size: 0.8rem;

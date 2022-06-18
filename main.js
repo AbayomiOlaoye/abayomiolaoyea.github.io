@@ -365,7 +365,7 @@ for (let btn = 0; btn < 2; btn += 1) {
 
 // -------- Modal Toggling ---------- //
 // Get the Popmodal
-const popModal = document.querySelectorAll('.pop');
+const popModal = document.querySelector('.pop');
 
 // Buttons (See Project) opens the modal
 const openModal = document.querySelectorAll('#project-container button');
