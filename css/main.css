@@ -188,7 +188,10 @@ div.container .works-top {
 
 section.sect-container {
   padding: 7.5rem 1.5rem 8.125rem 1.5rem;
-  /* position: relative; */
+}
+
+section.sect-container > .container {
+  position: relative;
 }
 
 .inline-hr {
@@ -464,21 +467,20 @@ hr#br {
 }
 
 /* Styling for Modal Menu */
-
 .pop {
   position: fixed;
-  display: block;
+  display: none;
   z-index: 1000;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  padding: 0 1rem;
   height: 100%;
   margin: 0 auto;
   backdrop-filter: blur(5px);
   background-color: rgba(22, 19, 19, 0.9);
   overflow: auto;
+  transition: all 1.5s ease-in;
 }
 
 .modalExit {
@@ -496,13 +498,11 @@ hr#br {
   margin: 1rem auto;
   padding: 2rem 1rem 1.25rem 1rem;
   width: 95%;
-  height: 100%;
 }
 
 .modal-header-ctn {
   display: flex;
   justify-content: space-between;
-  height: 82px;
 }
 
 .title-one {
@@ -520,6 +520,7 @@ hr#br {
   font-size: 0.8rem;
   color: #3c3a39;
   width: 100%;
+  margin-top: 70px;
 }
 
 .modal-list {
@@ -543,8 +544,9 @@ hr#br {
 
 .button-grp {
   position: relative;
-  margin-top: 16px;
+  margin: 16px 0;
   display: flex;
+  justify-content: space-between;
   gap: 12px;
 }
 
