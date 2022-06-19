@@ -190,6 +190,10 @@ section.sect-container {
   padding: 7.5rem 1.5rem 8.125rem 1.5rem;
 }
 
+section.sect-container > .container {
+  position: relative;
+}
+
 .inline-hr {
   margin: 24px 0 80px 0;
   color: #212121;
@@ -254,11 +258,12 @@ section.sect-container {
   width: 100%;
 }
 
-button {
+button,
+.button-grp a {
   background-color: #ff6b00;
   border: none;
   padding: 12px 10px;
-  height: 100%;
+  height: auto;
   width: auto;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -380,6 +385,8 @@ div > .tools::before {
 .contact-form {
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -396,7 +403,7 @@ div > .tools::before {
 }
 
 form {
-  margin-top: 73px;
+  margin: 73px auto 0 auto;
   padding-bottom: 124px;
 }
 
@@ -429,6 +436,12 @@ textarea {
   height: 48px;
 }
 
+.error-index {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
 hr.form-line {
   color: #dbd8d7;
 }
@@ -459,4 +472,99 @@ hr#br {
   margin: 0;
   padding: 0;
   color: #dfe1e6;
+}
+
+/* Styling for Modal Menu */
+.pop {
+  position: fixed;
+  display: none;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+  background-color: rgba(22, 19, 19, 0.9);
+  overflow: auto;
+  transition: all 1.5s ease-in;
+}
+
+.modalExit {
+  transition: width 1s ease-in-out, hieght 1s ease-in-out;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.modalExit:hover {
+  transform: scale(1.5);
+}
+
+.modal-ctn {
+  background-color: #fff;
+  margin: 1rem auto;
+  padding: 2rem 1rem 1.25rem 1rem;
+  width: 95%;
+}
+
+.modal-header-ctn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-one {
+  color: #172b4d;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.modal-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #3c3a39;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.modal-list {
+  color: #3c3a39;
+  border: 1px solid #dfe1e6;
+  padding: 10px 12px;
+}
+
+.pivot-ctn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #091e42;
+}
+
+.project-snapshot {
+  width: 100%;
+  height: auto;
+  margin: 0.8rem 0 1.5rem 0;
+}
+
+.button-grp {
+  position: relative;
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.button-grp a:hover {
+  opacity: 90%;
+  background-color: #e05304;
+}
+
+.button-grp img {
+  position: relative;
+  top: 3px;
+  margin-left: 0.5rem;
 }
