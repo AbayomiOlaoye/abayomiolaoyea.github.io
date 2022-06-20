@@ -104,7 +104,7 @@
   .container,
   .project-details {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
   }
 
   #works-section {
@@ -437,18 +437,13 @@
   }
 
   form {
-    padding: 0 0 124px 0;
-    width: 70%;
+    padding: 0 1.5rem 124px 0;
+    width: 50%;
     text-align: left;
   }
 
   form textarea {
-    min-width: 684px;
     margin: 0 16px 8px 16px;
-  }
-
-  .contact-btn {
-    margin-left: 16px;
   }
 }
 

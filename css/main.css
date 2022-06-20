@@ -187,7 +187,7 @@ div.container .works-top {
 }
 
 section.sect-container {
-  padding: 7.5rem 1.5rem 8.125rem 1.5rem;
+  padding: 7.5rem 0 8.125rem 0;
 }
 
 section.sect-container > .container {
@@ -316,6 +316,8 @@ button:active {
   background-repeat: no-repeat;
   background-position: 100% 395px;
   width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .abt-txt {
@@ -378,8 +380,7 @@ div > .tools::before {
 
 #contact-section {
   background-color: #fff;
-  padding-top: 120px;
-  padding-bottom: 8px;
+  padding: 120px 1.8rem 8px 1.8rem;
 }
 
 .contact-form {
@@ -387,7 +388,7 @@ div > .tools::before {
   flex-direction: column;
   justify-content: stretch;
   align-items: flex-start;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   padding: 0 24px;
@@ -405,6 +406,7 @@ div > .tools::before {
 form {
   margin: 73px auto 0 auto;
   padding-bottom: 124px;
+  width: 100%;
 }
 
 textarea[placeholder] {
@@ -419,14 +421,14 @@ textarea {
   font-size: 0.9rem;
   line-height: 1.5rem;
   width: 100%;
-  margin: 14px 16px;
+  margin: 14px 0;
   border: none;
+  padding: 12px;
 }
 
 textarea {
   margin: 14px 0;
   height: 114px;
-  padding: 12px;
   color: #3c3a39;
   background-color: #fbf8f7;
 }
