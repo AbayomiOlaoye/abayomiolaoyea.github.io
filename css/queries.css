@@ -101,37 +101,38 @@
     display: flex;
   }
 
-  .container {
-    margin: 0 auto;
+  .container,
+  .project-details {
     width: 90%;
   }
 
-  #works-section > div.container {
+  #works-section {
+    background: #fff;
+  }
+
+  .project-details {
     display: grid;
     grid-template-areas:
-      "top top"
       "hype hype"
       "one two"
       "three four"
       "five six";
-    background: #fff;
     gap: 24px;
   }
 
-  div.container .works-top {
+  .works-top {
     display: flex;
-    grid-area: top;
     justify-content: space-between;
-    text-align: left;
+    text-align: center;
     gap: 24px;
-    width: 100%;
+    width: 90%;
   }
 
   .recent-works {
     color: #091e42;
     line-height: 3.25rem;
     text-align: left;
-    width: 315px;
+    max-width: 315px;
     height: 52px;
   }
 
@@ -140,7 +141,7 @@
     max-width: 100%;
     width: 70%;
     height: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   div.multi-post {
@@ -216,7 +217,7 @@
   }
 
   .pro-layer {
-    padding: 178px 16px 14px 16px;
+    padding: 178px 0 14px 16px;
     width: 100%;
     height: auto;
     background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
@@ -310,19 +311,9 @@
     border-bottom: 1px solid #dbd8d7;
   }
 
-  input,
-  textarea {
-    max-width: 298px;
-    margin: 14px 72px;
-  }
-
-  form#lg-screen {
-    display: inline;
+  form {
+    text-align: left;
     margin-top: 0;
-  }
-
-  .desk-only textarea {
-    min-width: 298px;
   }
 
   .contact-btn {
@@ -331,7 +322,7 @@
   }
 
   hr.form-line {
-    color: #dbd8d7;
+    display: none;
   }
 
   .project.one {
@@ -356,6 +347,58 @@
 
   .project.six {
     grid-area: six;
+  }
+
+  /* Modal Styling @768px min-width */
+  .modal-ctn {
+    margin: 7rem auto;
+    padding: 2rem 1.5rem 1.85rem 1.5rem;
+    max-width: 85%;
+  }
+
+  .modal-header-ctn {
+    height: 2rem;
+  }
+
+  .title-one {
+    font-family: 'Crete round', sans-serif;
+    font-weight: 400;
+  }
+
+  .pivot-ctn {
+    flex-direction: row;
+    color: #344563;
+    width: 100%;
+    height: 80%;
+    gap: 25px;
+  }
+
+  .modal-skills {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .modal-texts {
+    max-height: 336px;
+    max-width: 424px;
+    overflow: hidden;
+    line-height: 30px;
+  }
+
+  .grp-textsBtn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-height: 460px;
+  }
+
+  .button-grp {
+    margin-top: 2rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 }
 
@@ -397,9 +440,8 @@
     background-position: top -60px right -20px;
   }
 
-  #works-section > div.container {
+  .project-details {
     grid-template-areas:
-      "top top top"
       "hype hype hype"
       "one two three"
       "four five six";
@@ -442,29 +484,13 @@
     gap: 96px;
     text-align: left;
     padding: 0;
+    padding-left: 2rem;
     margin: 0 auto;
   }
 
-  form#lg-screen input {
-    margin: 1rem;
-    max-width: 325px;
-  }
-
-  form#lg-screen input[type=email] {
-    max-width: 684px;
-  }
-
-  form#lg-screen {
+  form {
     padding: 0 0 124px 0;
-    width: 70%;
-  }
-
-  form.desk-only textarea {
-    min-width: 684px;
-    margin: 0 16px 8px 16px;
-  }
-
-  .contact-btn {
-    margin-left: 16px;
+    width: 50%;
+    text-align: left;
   }
 }

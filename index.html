@@ -259,11 +259,11 @@
 
   <section class="sect-container" id="contact-section">
     <div class="contact-form">
-      <p class="normal form-para">I'm always interested in hearing about new projects, so if you'd like to chat please do get in touch.</p>
-      <form class="mob-only" action="https://formspree.io/f/mrgjojra" method="post">
-        <input type="text" class="font-style" name="fullname" id="fullname" placeholder="Full name" maxlength="30" required>
+      <h6 class="normal form-para">I'm always interested in hearing about new projects, so if you'd like to chat please do get in touch.</h6>
+      <form class="form" action="https://formspree.io/f/mrgjojra" method="post">
+        <input type="text" class="font-style" name="fullname" id="fullname" placeholder="Full Name" maxlength="30" required>
         <hr class="form-line">
-        <input type="email" class="font-style" name="email" id="email-mobile" placeholder="Email address" required>
+        <input type="email" class="font-style" name="email" id="email" placeholder="Email address" required><br>
         <hr class="form-line">
         <textarea id="textarea-mobile" class="font-style" name="message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
         <button>Get in touch</button>
@@ -275,10 +275,13 @@
         <input type="email" class="font-style" name="email" id="email" placeholder="Email address" required><br>
         <textarea id="textarea" class="font-style" name="message" cols="30" rows="10" maxlength="500" required>Enter text here</textarea>
         <br>
-        <button class="contact-btn">Get in touch</button>
+        <button type="submit" class="contact-btn">Get in touch</button>
+        <div class="error-index"></div>
       </form>
     </div>
+    
     <hr id="br">
+    
     <div class="social-link-lp footerlink">
       <ul class="top-link contact-links">
         <li><a href="https://www.github.com/MindPrepDev"><img src="images/footer-git.svg" alt="my github profile"></a></li>
