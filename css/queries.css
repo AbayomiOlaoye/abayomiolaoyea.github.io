@@ -351,7 +351,7 @@
 
   /* Modal Styling @768px min-width */
   .modal-ctn {
-    margin: 5% auto;
+    margin: 7rem auto;
     padding: 2rem 1.5rem 1.85rem 1.5rem;
     max-width: 85%;
   }
@@ -360,10 +360,10 @@
     height: 2rem;
   }
 
-  /* .title-one {
+  .title-one {
     font-family: 'Crete round', sans-serif;
     font-weight: 400;
-  } */
+  }
 
   .pivot-ctn {
     flex-direction: row;
@@ -378,12 +378,12 @@
     margin-bottom: 20px;
   }
 
-  /* .modal-texts {
+  .modal-texts {
     max-height: 336px;
     max-width: 424px;
     overflow: hidden;
     line-height: 30px;
-  } */
+  }
 
   .grp-textsBtn {
     position: relative;
