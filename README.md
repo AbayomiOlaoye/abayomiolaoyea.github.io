@@ -1,18 +1,18 @@
 # Persona-Portfolio
 
-This is the mobile version of my personal portfolio as beginning Software Developer and it is yet a work-in-progress. It features my learning speed and upward scaling. It depicts my strengths, capabilities, and I hope you will be kind enough to give opinions on how to make it better. 
+This is my personal portfolio website as a beginner Software Developer. Though it is yet a work-in-progress, it's built with high preference for responsiveness using simole technologies. It features my learning speed and upward scaling. It depicts my strengths, capabilities, and I hope you will be kind enough to give opinions on how to make it better. 
 
-## Built With
+## Built With:
 
 - HTML
 - CSS
+- JavaScript
 
-## Live Version
-
+## Live Version 🌍
 Here is a link to the deployed version of my responsive [portfolio website](https://mindprepdev.github.io/).
 Feel free to check it out and share your view about it. 
 
-## Getting Started
+## Getting Started 
 
 To get a local copy for practice or as a template, follow these simple steps.
 
@@ -38,7 +38,7 @@ Open your code editor, open the folder (cloned repo) and play around with the co
 - LinkedIn: [LinkedIn](https://linkedin.com/in/oluwatoyin-olaoye-82880363/)
 
 
-## Show your support
+## Show your support 
 
 Give a ⭐️ if you like this project from a beginner like me!
 

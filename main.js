@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
       projectNameD: 'Keeping track of hundreds  of components website',
       projectSummaryM: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
       projectSummaryD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-      projectFeaturedImage: './images/modal-image.png',
+      projectFeaturedImage: './images/snap-pop.png',
       projectTechnologies: ['html', 'bootstrap', 'Ruby on rails'],
       projectLiveLink: '#',
       projectSourceRepo: 'https://www.github.com/MindPrepDev',
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalHeader.appendChild(modalTitle);
   }
 
-  // // Modal exit button
+  // Modal exit button
   const cancelBtn = document.createElement('img');
   cancelBtn.classList.add('cancel-nav', 'modalExit');
   cancelBtn.src = './images/cancel.svg';
@@ -327,9 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalImage = document.createElement('img');
   modalImage.className = 'project-snapshot';
   modalImage.src = modalInformation[0].projectFeaturedImage;
-  modalImage.alt = 'A reallly nice image about the project';
-  modalImage.width = '300';
-  modalImage.height = '210';
+  modalImage.alt = 'A really nice image of the project';
   modalTheme.appendChild(modalImage);
 
   // Both paragraphs
@@ -350,6 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const buttonGrp = document.createElement('div');
   buttonGrp.className = 'button-grp';
   textButtonCtn.append(projectDescription, projectDescriptionD, buttonGrp);
+
   // Buttons of interactivity
   for (let btn = 0; btn < 2; btn += 1) {
     const projectLink = document.createElement('a');
@@ -383,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // When the user clicks anywhere outside of the modal, close it
   window.addEventListener('click', (e) => {
     if (e.target === popModal) {
-    //     popModal.style.display = 'none';
+      popModal.style.display = 'none';
     }
   });
 });

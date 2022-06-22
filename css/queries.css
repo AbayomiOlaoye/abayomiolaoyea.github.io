@@ -313,8 +313,8 @@
   }
 
   form {
-    margin-top: 0;
     text-align: left;
+    margin-top: 0;
   }
 
   .contact-btn {
@@ -348,6 +348,58 @@
 
   .project.six {
     grid-area: six;
+  }
+
+  /* Modal Styling @768px min-width */
+  .modal-ctn {
+    margin: 7rem auto;
+    padding: 2rem 1.5rem 1.85rem 1.5rem;
+    max-width: 85%;
+  }
+
+  .modal-header-ctn {
+    height: 2rem;
+  }
+
+  .title-one {
+    font-family: 'Crete round', sans-serif;
+    font-weight: 400;
+  }
+
+  .pivot-ctn {
+    flex-direction: row;
+    color: #344563;
+    width: 100%;
+    height: 80%;
+    gap: 25px;
+  }
+
+  .modal-skills {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .modal-texts {
+    max-height: 336px;
+    max-width: 424px;
+    overflow: hidden;
+    line-height: 30px;
+  }
+
+  .grp-textsBtn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-height: 460px;
+  }
+
+  .button-grp {
+    margin-top: 2rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 }
 
@@ -433,6 +485,7 @@
     gap: 96px;
     text-align: left;
     padding: 0;
+    padding-left: 2rem;
     margin: 0 auto;
   }
 

@@ -11,7 +11,6 @@ body {
   font-family: 'Inter', sans-serif;
   color: #fff;
   line-height: 1.5rem;
-  max-height: 100vh;
   width: 100%;
   margin: 0 auto;
 }
@@ -190,14 +189,10 @@ section.sect-container {
   padding: 7.5rem 0 8.125rem 0;
 }
 
-section.sect-container > .container {
-  position: relative;
-}
-
 .inline-hr {
-  margin: 24px 0 80px 0;
+  margin: 24px 1.5rem 80px 1.5rem;
   color: #212121;
-  width: 100%;
+  padding: 0 1.5rem;
 }
 
 .multi-post {
@@ -484,8 +479,11 @@ hr#br {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   width: 100%;
+  padding: 0 1rem;
   height: 100%;
+  max-height: 728px;
   margin: 0 auto;
   backdrop-filter: blur(5px);
   background-color: rgba(22, 19, 19, 0.9);
@@ -494,7 +492,7 @@ hr#br {
 }
 
 .modalExit {
-  transition: width 1s ease-in-out, hieght 1s ease-in-out;
+  transition: width 1s ease-in-out, height 1s ease-in-out;
   cursor: pointer;
   margin-right: 1rem;
 }
@@ -505,9 +503,10 @@ hr#br {
 
 .modal-ctn {
   background-color: #fff;
-  margin: 1rem auto;
+  margin: 2rem auto;
   padding: 2rem 1rem 1.25rem 1rem;
   width: 95%;
+  height: auto;
 }
 
 .modal-header-ctn {
@@ -544,17 +543,16 @@ hr#br {
   flex-direction: column;
   width: 100%;
   color: #091e42;
+  height: auto;
 }
 
 .project-snapshot {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin: 0.8rem 0 1.5rem 0;
 }
 
 .button-grp {
-  position: relative;
-  margin: 16px 0;
+  margin-top: 16px;
   display: flex;
   justify-content: space-between;
   gap: 12px;
