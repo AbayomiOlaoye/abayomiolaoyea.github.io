@@ -489,10 +489,10 @@
     gap: 12px;
   }
 
-    .modal-texts {
-      max-height: 336px;
-      width: 100%;
-      overflow: hidden;
-      line-height: 30px;
-    }
+  .modal-texts {
+    max-height: 336px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 30px;
+  }
 }
