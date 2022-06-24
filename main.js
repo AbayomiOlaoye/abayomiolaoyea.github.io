@@ -421,5 +421,9 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('userInfo', JSON.stringify(userData));
     }
   }
-  checkLocalStorage();
+  form.addEventListener('input', (event) => {
+    event.preventDefault();
+    checkLocalStorage();
+    form.submit();
+  });
 });
