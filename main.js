@@ -385,19 +385,41 @@ document.addEventListener('DOMContentLoaded', () => {
       popModal.style.display = 'none';
     }
   });
-});
 
-// Form Validation
-const form = document.querySelector('.form');
-const email = document.querySelector('#email');
-const error = document.querySelector('.error-index');
-form.addEventListener('submit', (event) => {
-  if (email.value.trim() !== email.value.toLowerCase()) {
-    error.textContent = 'Almost there! Use all-lowercase this time.';
-    error.style.color = 'red';
-    event.preventDefault();
-    setTimeout(() => {
-      error.innerHTML = '';
-    }, 3000);
+  // Form Validation
+  const form = document.querySelector('.form');
+  const email = document.querySelector('#email');
+  const error = document.querySelector('.error-index');
+  form.addEventListener('submit', (e) => {
+    if (email.trim() !== email.toLowerCase()) {
+      error.textContent = 'Almost there! Use all-lowercase this time.';
+      error.style.color = 'red';
+      e.preventDefault();
+      setTimeout(() => {
+        error.innerHTML = '';
+      }, 3000);
+    }
+  });
+
+  // Store user's data as objects in the Local Storage
+  const userName = document.querySelector('#fullname');
+  const message = document.querySelector('#textarea');
+  let userData;
+
+  // Check user's data or Store a new one
+  function checkLocalStorage() {
+    const getInfo = JSON.parse(localStorage.getItem('userInfo'));
+    userName.value = getInfo.user_name;
+    email.value = getInfo.user_email;
+    message.value = getInfo.user_message;
+    if (!localStorage.getItem('userInfo')) {
+      userData = {
+        user_name: userName.value,
+        user_email: email.value,
+        user_message: message.value,
+      };
+      localStorage.setItem('userInfo', JSON.stringify(userData));
+    }
   }
+  checkLocalStorage();
 });
