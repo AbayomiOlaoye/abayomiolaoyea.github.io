@@ -17,6 +17,8 @@ body {
 }
 
 header {
+  position: fixed;
+  z-index: 500;
   width: 100%;
   display: flex;
   background-color: #3c3a39;
