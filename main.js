@@ -420,4 +420,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   checkLocalStorage();
 
+  // Update or Setc(new users) user's details //
+  function getUserInfo() {
+    userData.user_name = userName.value;
+    userData.user_email = userEmail.value;
+    userData.user_input = userInput.value;
+    localStorage.setItem('userLoggedInfo', JSON.stringify(userData));
+  }
+
+  // Iterate through each input element with an event listening smurf //
+  inputs.forEach((input) => {
+    input.addEventListener('input', () => {
+      getUserInfo();
+    });
+  });
 });
