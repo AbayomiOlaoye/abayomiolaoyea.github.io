@@ -401,29 +401,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Store user's data as objects in the Local Storage
-  const userName = document.querySelector('#fullname');
-  const message = document.querySelector('#textarea');
-  let userData;
+  // Local Storage Configuration
+  const userName = document.getElementById('fullname');
+  const userEmail = document.getElementById('email');
+  const userInput = document.getElementById('textarea');
+  const inputs = document.querySelectorAll('.font-style');
 
-  // Check user's data or Store a new one
+  // Setup Local storage key/value
+  const userData = { user_name: '', user_email: '', user_input: '' };
+  // Check and pre-fill user's details //
   function checkLocalStorage() {
-    const getInfo = JSON.parse(localStorage.getItem('userInfo'));
-    userName.value = getInfo.user_name;
-    email.value = getInfo.user_email;
-    message.value = getInfo.user_message;
-    if (!localStorage.getItem('userInfo')) {
-      userData = {
-        user_name: userName.value,
-        user_email: email.value,
-        user_message: message.value,
-      };
-      localStorage.setItem('userInfo', JSON.stringify(userData));
+    if (localStorage.getItem('userLoggedInfo')) {
+      const userInfo = JSON.parse(localStorage.getItem('userLoggedInfo'));
+      userName.value = userInfo.user_name;
+      userEmail.value = userInfo.user_email;
+      userInput.innerText = userInfo.user_input;
     }
   }
-  form.addEventListener('input', (event) => {
-    event.preventDefault();
-    checkLocalStorage();
-    form.submit();
-  });
+  checkLocalStorage();
+
 });
