@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const email = document.querySelector('#email');
   const error = document.querySelector('.error-index');
   form.addEventListener('submit', (e) => {
-    if (email.trim() !== email.toLowerCase()) {
+    if (email.value.trim() !== email.value.toLowerCase()) {
       error.textContent = 'Almost there! Use all-lowercase this time.';
       error.style.color = 'red';
       e.preventDefault();
