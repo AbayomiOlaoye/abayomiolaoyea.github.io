@@ -9,7 +9,7 @@ This is my personal portfolio website as a beginner Software Developer. Though i
 - JavaScript
 
 ## Live Version 🌍
-Here is a link to the deployed version of my responsive [portfolio website](https://mindprepdev.github.io/).
+Here is a link to the deployed version of my responsive [portfolio website](https://abayomiolaoye.github.io/).
 Feel free to check it out and share your view about it. 
 
 ## Getting Started 
@@ -33,7 +33,7 @@ Open your code editor, open the folder (cloned repo) and play around with the co
 
 👤 **Oluwatoyin Olaoye**
 
-- GitHub: [@MindPrepDev](https://github.com/MindPrepDev)
+- GitHub: [@MindPrepDev](https://github.com/AbayomiOlaoye)
 - Twitter: [@olaoyeelijah](https://twitter.com/olaoyeelijah)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/oluwatoyin-olaoye-82880363/)
 
